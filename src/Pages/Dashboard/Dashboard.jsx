@@ -552,7 +552,7 @@ const handleDealerChange = (event) => {
         </div>
 
         <div>
-          <h2>Dashboard</h2>
+          <h2>Dashboards</h2>
           <p>
             Monitor clients, portfolios and trading performance
           </p>
