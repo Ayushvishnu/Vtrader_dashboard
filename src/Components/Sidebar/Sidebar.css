@@ -1,0 +1,1320 @@
+/* =========================================
+   MAIN SIDEBAR
+========================================= */
+
+.vitta-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 207px;
+  height: 100vh;
+
+  z-index: 1000;
+
+  overflow: hidden;
+
+  border-right:
+    1px solid rgba(
+      255,
+      255,
+      255,
+      0.07
+    );
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 16, 24, 0.88),
+      rgba(1, 13, 21, 0.94)
+    ),
+    url("/assets/bg-image.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition:
+    width 0.3s ease;
+}
+
+
+.vitta-sidebar-collapsed {
+  width: 52px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.vitta-sidebar-logo {
+  width: 100%;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 14px;
+
+  border-bottom:
+    1px solid rgba(
+      255,
+      255,
+      255,
+      0.04
+    );
+}
+
+
+.vitta-sidebar-logo img {
+  width: 175px;
+  max-width: 100%;
+
+  height: 100px;
+  /* height: auto; */
+
+  display: block;
+
+  object-fit: contain;
+
+  transition:
+    width 0.3s ease;
+}
+
+
+/* COLLAPSED LOGO */
+
+/* .vitta-sidebar-collapsed
+.vitta-sidebar-logo {
+  justify-content: center;
+
+  padding: 0 6px;
+}
+
+
+.vitta-sidebar-collapsed
+.vitta-sidebar-logo img {
+  width: 40px;
+} */
+
+
+
+
+
+
+/* =========================================
+   ICON RAIL
+========================================= */
+
+.sidebar-icon-rail {
+  width: 52px;
+  min-width: 52px;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 10px;
+
+  padding-top: 12px;
+
+  border-right:
+    1px solid rgba(
+      255,
+      255,
+      255,
+      0.06
+    );
+
+  background: transparent;
+}
+
+
+/* COLLAPSE */
+
+.sidebar-collapse-btn {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(
+      0,
+      217,
+      154,
+      0.18
+    );
+
+  border-radius: 7px;
+
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.05
+    );
+
+  color: #00d99a;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.sidebar-collapse-btn:hover {
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.13
+    );
+
+  color: #ffffff;
+}
+
+
+/* GROUP BUTTON */
+
+.sidebar-icon-btn {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #78909b;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.sidebar-icon-btn:hover {
+  color: #ffffff;
+
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.06
+    );
+}
+
+
+.sidebar-icon-btn.active {
+  color: #00d99a;
+
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.10
+    );
+
+  border:
+    1px solid rgba(
+      0,
+      217,
+      154,
+      0.22
+    );
+}
+
+
+/* =========================================
+   SECOND SIDEBAR MENU
+========================================= */
+
+.sidebar-menu {
+  flex: 1;
+
+  min-width: 0;
+
+  height: 100%;
+
+  padding:
+    12px
+    9px
+    20px;
+
+  overflow-y: auto;
+
+  background: transparent;
+
+  animation:
+    sidebarMenuOpen
+    0.2s ease;
+}
+
+
+@keyframes sidebarMenuOpen {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+
+}
+
+
+/* =========================================
+   NAV
+========================================= */
+
+.sidebar-menu-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.sidebar-menu-item {
+  width: 100%;
+  min-height: 37px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    0
+    9px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  color: #8ea0aa;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+
+.sidebar-menu-item i {
+  width: 16px;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+  color: #71858f;
+
+  font-size: 11px;
+}
+
+
+.sidebar-menu-item span {
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+
+/* HOVER */
+
+.sidebar-menu-item:hover {
+  color: #ffffff;
+
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.04
+    );
+}
+
+
+/* ACTIVE */
+
+.sidebar-menu-item.active {
+  border-color:
+    rgba(
+      0,
+      217,
+      154,
+      0.35
+    );
+
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.055
+    );
+
+  color: #00dda2;
+}
+
+
+.sidebar-menu-item.active i {
+  color: #00dda2;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 4px;
+}
+
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background:
+    rgba(
+      0,
+      217,
+      154,
+      0.15
+    );
+}
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   DASHBOARD REPORT - BOTTOM SIDEBAR CARD
+===================================================== */
+
+.sidebar-menu {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+
+.sidebar-menu-list {
+  flex-shrink: 0;
+}
+
+
+/* CARD */
+
+
+
+
+/* ================= CHART ================= */
+
+.sidebar-report-chart {
+  position: relative;
+
+  width: 100%;
+  height: 68px;
+
+  margin-bottom: 8px;
+}
+
+
+.sidebar-report-chart svg {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+}
+
+
+.sidebar-report-arrow {
+  position: absolute;
+
+  top: 5px;
+  right: 7px;
+
+  color: #00e6a2;
+
+  font-size: 11px;
+
+  transform: rotate(-12deg);
+
+  text-shadow:
+    0 0 8px rgba(0, 230, 162, 0.45);
+}
+
+
+/* small fake volume bars */
+
+.sidebar-report-chart::after {
+  content: "";
+
+  position: absolute;
+
+  left: 8px;
+  right: 8px;
+  bottom: 3px;
+
+  height: 28px;
+
+  opacity: 0.65;
+
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(140, 255, 215, 0.7) 0 3px,
+      transparent 3px 6px
+    );
+
+  clip-path:
+    polygon(
+      0% 82%,
+      7% 76%,
+      14% 90%,
+      21% 63%,
+      28% 78%,
+      35% 50%,
+      42% 68%,
+      49% 43%,
+      56% 55%,
+      63% 36%,
+      70% 47%,
+      77% 26%,
+      84% 36%,
+      91% 17%,
+      100% 8%,
+      100% 100%,
+      0% 100%
+    );
+
+  pointer-events: none;
+}
+
+
+/* ================= BUTTON ================= */
+
+/* .sidebar-report-btn {
+  width: 100%;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 7px;
+
+  padding: 0 9px;
+
+  border: 1px solid rgba(62, 255, 188, 0.24);
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00b879,
+      #009e70
+    );
+
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+} */
+
+
+.sidebar-report-btn:hover {
+  color: #ffffff;
+
+  filter: brightness(1.08);
+}
+
+
+.sidebar-report-btn i {
+  font-size: 8px;
+}
+
+
+
+
+/* =========================================
+   DASHBOARD REPORT CARD
+========================================= */
+
+
+
+.sidebar-dashboard-report {
+  position: absolute;
+
+  left: 10px;
+  right: 10px;
+  bottom: 12px;
+
+  z-index: 5;
+
+  padding: 10px;
+
+  border:
+    1px solid rgba(0, 217, 160, 0.28);
+
+  border-radius: 11px;
+
+  background:
+    rgba(1, 21, 25, 0.72);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  overflow: hidden;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.03),
+    0 8px 22px rgba(0, 0, 0, 0.18);
+
+  transition:
+    left 0.3s ease,
+    right 0.3s ease,
+    padding 0.3s ease;
+}
+
+
+/* =========================================
+   DASHBOARD BUTTON
+========================================= */
+
+/* .sidebar-report-btn {
+  width: 100%;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 8px;
+
+  padding: 0 10px;
+
+  border: 1px solid rgba(75, 255, 195, 0.25);
+
+  border-radius: 7px;
+
+  text-decoration: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00b879,
+      #009e70
+    );
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-report-btn {
+  width: 100%;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 0 12px;
+
+  border:
+    1px solid rgba(75, 255, 195, 0.25);
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00b879,
+      #009e70
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+}
+
+.sidebar-report-btn span {
+  flex: 1;
+}
+
+.sidebar-report-btn i:last-child {
+  font-size: 10px;
+}
+
+.sidebar-report-main-icon {
+  display: none;
+}
+
+.sidebar-report-btn:hover {
+  color: #ffffff;
+
+  filter: brightness(1.08);
+}
+
+
+.sidebar-report-btn i {
+  font-size: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MAIN SIDEBAR - INCREASED SIZE
+========================================= */
+
+.vitta-sidebar {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 245px;
+  height: 100vh;
+
+  z-index: 1000;
+
+  overflow: hidden;
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.07);
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(2, 16, 24, 0.88),
+      rgba(1, 13, 21, 0.94)
+    ),
+    url("/assets/bg-image.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition:
+    width 0.3s ease;
+}
+
+
+.vitta-sidebar-collapsed {
+  width: 64px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.vitta-sidebar-logo {
+  width: 100%;
+  height: 78px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 16px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+.vitta-sidebar-logo img {
+  width: 195px;
+  max-width: 100%;
+
+  height: 80px;
+
+  display: block;
+
+  object-fit: contain;
+
+  transition:
+    width 0.3s ease;
+}
+
+
+
+/* =========================================
+   SIDEBAR BODY
+========================================= */
+
+/* .vitta-sidebar-content {
+  width: 100%;
+
+  height:
+    calc(100vh - 78px);
+
+  display: flex;
+} */
+.vitta-sidebar-content {
+  position: relative;
+
+  width: 100%;
+  height: calc(100vh - 78px);
+
+  display: flex;
+
+  padding-bottom: 175px;
+}
+
+/* =========================================
+   ICON RAIL
+========================================= */
+
+.sidebar-icon-rail {
+  width: 64px;
+  min-width: 64px;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 12px;
+
+  padding-top: 14px;
+
+  border-right:
+    1px solid rgba(255, 255, 255, 0.06);
+
+  background: transparent;
+}
+
+
+/* COLLAPSE BUTTON */
+
+.sidebar-collapse-btn {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(0, 217, 154, 0.18);
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 154, 0.05);
+
+  color: #00d99a;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.sidebar-collapse-btn:hover {
+  background:
+    rgba(0, 217, 154, 0.13);
+
+  color: #ffffff;
+}
+
+
+/* GROUP BUTTON */
+
+.sidebar-icon-btn {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #78909b;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.sidebar-icon-btn:hover {
+  color: #ffffff;
+
+  background:
+    rgba(0, 217, 154, 0.06);
+}
+
+
+.sidebar-icon-btn.active {
+  color: #00d99a;
+
+  background:
+    rgba(0, 217, 154, 0.1);
+
+  border:
+    1px solid rgba(0, 217, 154, 0.22);
+}
+
+
+/* =========================================
+   SECOND SIDEBAR MENU
+========================================= */
+
+.sidebar-menu {
+  position: relative;
+
+  flex: 1;
+
+  min-width: 0;
+
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding:
+    14px
+    11px
+    22px;
+
+  overflow-y: auto;
+
+  background: transparent;
+
+  animation:
+    sidebarMenuOpen
+    0.2s ease;
+}
+
+
+@keyframes sidebarMenuOpen {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateX(-8px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateX(0);
+  }
+
+}
+
+
+/* =========================================
+   NAV
+========================================= */
+
+.sidebar-menu-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  flex-shrink: 0;
+}
+
+
+.sidebar-menu-item {
+  width: 100%;
+  min-height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding:
+    0
+    12px;
+
+  border:
+    1px solid transparent;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  color: #8ea0aa;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+
+.sidebar-menu-item i {
+  width: 18px;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+  color: #71858f;
+
+  font-size: 13px;
+}
+
+
+.sidebar-menu-item span {
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+}
+
+
+/* HOVER */
+
+.sidebar-menu-item:hover {
+  color: #ffffff;
+
+  background:
+    rgba(0, 217, 154, 0.05);
+}
+
+
+/* ACTIVE */
+
+.sidebar-menu-item.active {
+  border-color:
+    rgba(0, 217, 154, 0.35);
+
+  background:
+    rgba(0, 217, 154, 0.07);
+
+  color: #00dda2;
+}
+
+
+.sidebar-menu-item.active i {
+  color: #00dda2;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.sidebar-menu::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+.sidebar-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.sidebar-menu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background:
+    rgba(0, 217, 154, 0.18);
+}
+
+
+/* =========================================
+   DASHBOARD REPORT CARD
+========================================= */
+
+
+
+/* =========================================
+   VIDEO
+========================================= */
+
+/* .sidebar-report-video {
+  width: 100%;
+  height: 105px;
+
+  margin-bottom: 10px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background:
+    rgba(8, 8, 8, 0.5);
+}
+
+
+.sidebar-report-video video {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+} */
+
+
+/* img */
+
+/* .sidebar-report-video {
+  width: 100%;
+  height: 105px;
+
+  margin-bottom: 10px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: rgba(8, 8, 8, 0.5);
+}
+
+.sidebar-report-video img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 8px;
+} */
+
+
+
+
+
+
+
+
+.sidebar-report-video {
+  width: 100%;
+  height: 105px;
+
+  margin-bottom: 10px;
+
+  overflow: hidden;
+
+  border-radius: 8px;
+
+  background: rgba(8, 8, 8, 0.5);
+}
+
+.sidebar-report-video img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================
+   DASHBOARD BUTTON
+========================================= */
+
+/* .sidebar-report-btn {
+  width: 100%;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 9px;
+
+  padding:
+    0
+    12px;
+
+  border:
+    1px solid rgba(75, 255, 195, 0.25);
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00b879,
+      #009e70
+    );
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  transition: 0.2s ease;
+} */
+
+
+.sidebar-report-btn:hover {
+  color: #ffffff;
+
+  filter:
+    brightness(1.08);
+}
+
+
+.sidebar-report-btn i {
+  font-size: 11px;
+}

@@ -1,0 +1,580 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.pnl-analysis-page {
+  min-height: calc(100vh - 68px);
+
+  padding: 24px 22px 36px;
+
+  color: #ffffff;
+
+  background: transparent;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.pnl-analysis-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.pnl-analysis-heading-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid
+    rgba(0, 217, 160, 0.22);
+
+  border-radius: 10px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+
+  font-size: 17px;
+}
+
+
+.pnl-analysis-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.pnl-analysis-heading p {
+  margin: 4px 0 0;
+
+  color: #7c9099;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.pnl-analysis-card {
+  overflow: hidden;
+
+  border: 1px solid
+    rgba(145, 200, 205, 0.18);
+
+  border-radius: 12px;
+
+  background:
+    rgba(3, 18, 28, 0.16);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255, 255, 255, 0.03),
+    0 8px 28px
+      rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.pnl-analysis-card-header {
+  min-height: 68px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 16px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.pnl-analysis-card-title-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+
+  font-size: 12px;
+}
+
+
+.pnl-analysis-card-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.pnl-analysis-card-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.pnl-analysis-body {
+  padding: 14px;
+}
+
+
+/* =====================================================
+   TABS
+===================================================== */
+
+.pnl-analysis-tabs {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-bottom: 12px;
+}
+
+
+.pnl-analysis-tabs button {
+  height: 40px;
+
+  border: 1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 8px;
+
+  background:
+    rgba(2, 15, 23, 0.5);
+
+  color: #91a4ac;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.pnl-analysis-tabs button:hover {
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 217, 160, 0.25);
+}
+
+
+.pnl-analysis-tabs button.active {
+  border-color:
+    rgba(0, 217, 160, 0.32);
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   CHART CARD
+===================================================== */
+
+.pnl-analysis-chart-card {
+  width: 100%;
+
+  min-height: 360px;
+
+  padding:
+    13px
+    12px
+    4px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.36);
+}
+
+
+/* =====================================================
+   SIDE PANEL
+===================================================== */
+
+.pnl-analysis-side-panel {
+  min-height: 414px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 13px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.31);
+}
+
+
+.pnl-analysis-side-panel > label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aabb2;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.pnl-analysis-side-panel select {
+  width: 100%;
+  height: 42px;
+
+  padding:
+    0
+    34px
+    0
+    12px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.19);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+
+.pnl-analysis-side-panel select:focus {
+  border-color:
+    rgba(0, 217, 160, 0.42);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.04);
+}
+
+
+.pnl-analysis-side-panel
+select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   OPTION BUTTON GRID
+===================================================== */
+
+.pnl-analysis-option-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+
+.pnl-analysis-option-grid button {
+  min-height: 38px;
+
+  padding: 5px;
+
+  border:
+    1px solid
+    rgba(135, 180, 185, 0.16);
+
+  border-radius: 7px;
+
+  background:
+    rgba(3, 17, 26, 0.46);
+
+  color: #98a9b0;
+
+  font-size: 7px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.pnl-analysis-option-grid button:hover {
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 217, 160, 0.25);
+}
+
+
+.pnl-analysis-option-grid
+button.active {
+  border-color:
+    rgba(0, 217, 160, 0.36);
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.pnl-analysis-summary {
+  margin-top: auto;
+
+  padding: 13px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.1);
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 217, 160, 0.075),
+      rgba(0, 120, 90, 0.045)
+    );
+}
+
+
+.pnl-analysis-summary > div {
+  min-height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+
+.pnl-analysis-summary span {
+  color: #8b9fa7;
+
+  font-size: 9px;
+}
+
+
+.pnl-analysis-summary strong {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.pnl-analysis-summary
+strong.profit {
+  color: #00e09d;
+}
+
+
+.pnl-analysis-summary
+strong.loss {
+  color: #ff5965;
+}
+
+
+/* TOTAL */
+
+.pnl-analysis-summary .total {
+  margin-top: 5px;
+
+  padding-top: 7px;
+
+  border-top:
+    1px solid
+    rgba(0, 217, 160, 0.09);
+}
+
+
+.pnl-analysis-summary
+.total span {
+  color: #d4dfe2;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.pnl-analysis-summary
+.total strong {
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   RECHARTS
+===================================================== */
+
+.pnl-analysis-page
+.recharts-default-tooltip {
+  background:
+    #061923 !important;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2)
+    !important;
+
+  border-radius:
+    8px !important;
+}
+
+
+.pnl-analysis-page
+.recharts-tooltip-label {
+  color: #ffffff !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1199px) {
+
+  .pnl-analysis-side-panel {
+    min-height: 300px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .pnl-analysis-page {
+    padding:
+      14px
+      12px
+      25px;
+  }
+
+
+  .pnl-analysis-heading {
+    align-items: flex-start;
+  }
+
+
+  .pnl-analysis-heading-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 14px;
+  }
+
+
+  .pnl-analysis-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .pnl-analysis-heading p {
+    font-size: 9px;
+  }
+
+
+  .pnl-analysis-tabs {
+    grid-template-columns: 1fr;
+  }
+
+
+  .pnl-analysis-option-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+
+  .pnl-analysis-chart-card {
+    min-height: 320px;
+  }
+
+}

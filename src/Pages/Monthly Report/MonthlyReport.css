@@ -1,0 +1,1398 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.monthly-report-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 20px;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.monthly-report-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 14px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+.monthly-report-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.monthly-report-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.monthly-report-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   FILTER CARD
+===================================================== */
+
+.monthly-report-filter-card {
+  margin-bottom: 16px;
+
+  padding: 17px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+
+  box-shadow:
+    0 8px 24px
+    rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   FIELD
+===================================================== */
+
+.monthly-report-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aabb2;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+.monthly-report-field select {
+  width: 100%;
+  height: 41px;
+
+  padding: 0 12px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.monthly-report-field select option {
+  background:
+    #061923;
+
+  color:
+    #ffffff;
+}
+
+
+.monthly-report-field select:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   APPLY
+===================================================== */
+
+.monthly-report-apply-btn {
+  width: 100%;
+  height: 41px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  border:
+    1px solid #00be67;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-apply-btn:disabled {
+  border-color:
+    rgba(135, 185, 190, 0.1);
+
+  background:
+    rgba(115, 135, 140, 0.12);
+
+  color: #697b82;
+
+  cursor: not-allowed;
+}
+
+
+/* =====================================================
+   REPORT CARD
+===================================================== */
+
+.monthly-report-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+}
+
+
+/* =====================================================
+   REPORT HEADER
+===================================================== */
+
+.monthly-report-card-header {
+  min-height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 15px 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.monthly-report-card-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.monthly-report-card-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   TABLE / GRAPH SWITCH
+===================================================== */
+
+.monthly-report-view-switch {
+  display: flex;
+
+  gap: 3px;
+
+  padding: 3px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.16);
+
+  border-radius: 8px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+}
+
+
+.monthly-report-view-switch button {
+  min-width: 82px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 0 11px;
+
+  border: 0;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #80949c;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-view-switch button.active {
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   MAIN TABLE
+===================================================== */
+
+.monthly-report-table-wrap {
+ width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+.monthly-report-table {
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.monthly-report-table > thead th {
+  height: 42px;
+
+  padding:
+    10px
+    14px;
+
+  background:rgba(5,41,50,1);
+
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.monthly-report-main-row > td {
+  height: 54px;
+
+  padding:
+    10px
+    14px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(3, 18, 28, 0.27);
+
+  color: #b8c8cd;
+
+  font-size: 9px;
+
+  vertical-align: middle;
+}
+
+
+.monthly-report-main-row:nth-child(even) > td {
+  background:
+    rgba(6, 25, 35, 0.32);
+}
+
+
+.monthly-report-main-row:hover > td {
+  background:
+    rgba(0, 217, 160, 0.045);
+}
+
+
+.monthly-report-main-row.expanded > td {
+  background:
+    rgba(0, 217, 160, 0.055);
+}
+
+
+/* =====================================================
+   MONTH
+===================================================== */
+
+.monthly-report-month {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.monthly-report-month strong {
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.monthly-report-month span {
+  margin-top: 3px;
+
+  color: #71868f;
+
+  font-size: 7px;
+}
+
+
+/* =====================================================
+   PNL
+===================================================== */
+
+.monthly-report-pnl {
+  color: #00d9a0;
+
+  font-weight: 600;
+}
+
+
+.monthly-report-pnl.loss {
+  color: #ff5965;
+}
+
+
+.monthly-report-total {
+  color: #00d9a0;
+
+  font-weight: 700;
+}
+
+
+.monthly-report-total.loss {
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   SEND
+===================================================== */
+
+.monthly-report-send-btn {
+  min-width: 76px;
+  height: 31px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.3);
+
+  border-radius: 6px;
+
+  background:
+    rgba(0, 217, 160, 0.04);
+
+  color: #00d9a0;
+
+  font-size: 8px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-send-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.1);
+}
+
+
+/* =====================================================
+   DETAILS BUTTON
+===================================================== */
+
+.monthly-report-details-btn {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: auto;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 50%;
+
+  background:
+    rgba(2, 15, 23, 0.5);
+
+  color: #80949c;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-details-btn:hover,
+.monthly-report-details-btn.active {
+  border-color:
+    rgba(0, 217, 160, 0.35);
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+}
+
+
+/* =====================================================
+   EXPANDED ROW
+===================================================== */
+
+.monthly-report-expanded-row > td {
+  padding: 0 !important;
+
+  background:
+    rgba(1, 13, 20, 0.4);
+}
+
+
+/* =====================================================
+   DETAILS PANEL
+===================================================== */
+
+.monthly-report-details-panel {
+  margin: 8px 12px 12px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+}
+
+
+.monthly-report-details-heading {
+  padding: 13px 14px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.monthly-report-details-heading h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 11px;
+}
+
+
+.monthly-report-details-heading p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 7px;
+}
+
+
+/* =====================================================
+   TRADE SECTION
+===================================================== */
+
+.monthly-report-trade-section h5 {
+  margin: 0;
+
+  padding: 11px 13px;
+
+  color: #aab9be;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   DETAIL TABLE
+===================================================== */
+
+.monthly-report-detail-table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+.monthly-report-detail-table {
+  width: 100%;
+
+  min-width: 760px;
+
+  border-collapse: collapse;
+}
+
+
+.monthly-report-detail-table th {
+  padding: 9px 12px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #79b9a8;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+.monthly-report-detail-table td {
+  padding: 10px 12px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.045);
+
+  color: #b4c4c9;
+
+  font-size: 8px;
+
+  white-space: nowrap;
+}
+
+
+.monthly-report-stock-name {
+  color: #ffffff !important;
+
+  font-weight: 600;
+}
+
+
+.monthly-report-segment-badge {
+  padding: 4px 7px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 12px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+
+  font-size: 7px;
+}
+
+
+.monthly-report-detail-profit {
+  color: #00d9a0;
+
+  font-weight: 700;
+}
+
+
+.monthly-report-detail-loss {
+  color: #ff5965;
+
+  font-weight: 700;
+}
+
+
+.monthly-report-no-trades {
+  height: 50px;
+
+  color: #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.monthly-report-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding:
+    12px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.monthly-report-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.5);
+
+  color: #81969e;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-pagination button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.monthly-report-pagination span {
+  min-width: 58px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+
+  color: #d5e1e4;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   GRAPH
+===================================================== */
+
+.monthly-report-graph-section {
+  padding: 17px;
+}
+
+
+.monthly-report-graph-heading {
+  margin-bottom: 13px;
+}
+
+
+.monthly-report-graph-heading h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.monthly-report-graph-heading p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+.monthly-report-chart {
+  width: 100%;
+  height: 360px;
+
+  padding:
+    10px
+    8px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.14);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.35);
+}
+
+
+/* =====================================================
+   GRAPH TOOLTIP
+===================================================== */
+
+.monthly-report-chart-tooltip {
+  width: 190px;
+
+  padding: 12px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.18);
+
+  border-radius: 9px;
+
+  background:
+    rgba(5, 25, 34, 0.98);
+
+  box-shadow:
+    0 18px 40px
+    rgba(0, 0, 0, 0.35);
+}
+
+
+.monthly-report-chart-tooltip h4 {
+  margin:
+    0
+    0
+    9px;
+
+  padding-bottom: 8px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.monthly-report-tooltip-section {
+  margin-bottom: 9px;
+}
+
+
+.monthly-report-tooltip-section > strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  font-size: 8px;
+}
+
+
+.monthly-report-tooltip-section > strong.equity {
+  color: #00d9a0;
+}
+
+
+.monthly-report-tooltip-section > strong.fo {
+  color: #5eb5dc;
+}
+
+
+.monthly-report-tooltip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: 4px;
+}
+
+
+.monthly-report-tooltip-row span {
+  color: #71868f;
+
+  font-size: 7px;
+}
+
+
+.monthly-report-tooltip-row b {
+  color: #a9babf;
+
+  font-size: 7px;
+}
+
+
+.monthly-report-tooltip-row b.loss {
+  color: #ff5965;
+}
+
+
+.monthly-report-tooltip-total {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 8px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+
+  font-size: 8px;
+}
+
+
+.monthly-report-tooltip-total strong {
+  color: #00d9a0;
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.monthly-report-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0, 0, 0, 0.69);
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* =====================================================
+   SEND MODAL
+===================================================== */
+
+.monthly-report-send-modal {
+  width:
+    min(
+      500px,
+      95vw
+    );
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 12px;
+
+  background: #061923;
+
+  box-shadow:
+    0 24px 65px
+    rgba(0, 0, 0, 0.5);
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.monthly-report-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 15px 16px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 217, 160, 0.075),
+      rgba(3, 18, 28, 0.96)
+    );
+}
+
+
+.monthly-report-modal-title {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+
+.monthly-report-modal-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.16);
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+}
+
+
+.monthly-report-modal-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+
+.monthly-report-modal-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+.monthly-report-modal-header > button {
+  width: 29px;
+  height: 29px;
+
+  border: 0;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #80949c;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-modal-header > button:hover {
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   MODAL BODY
+===================================================== */
+
+.monthly-report-modal-body {
+  padding: 16px;
+}
+
+
+.monthly-report-selected-month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px;
+
+  margin-bottom: 15px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.14);
+
+  border-radius: 7px;
+
+  background:
+    rgba(2, 15, 23, 0.42);
+}
+
+
+.monthly-report-selected-month span {
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+.monthly-report-selected-month strong {
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.monthly-report-modal-body > h4 {
+  margin:
+    0
+    0
+    10px;
+
+  color: #aab9be;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   REPORT TYPE
+===================================================== */
+
+.monthly-report-type-card {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 10px;
+
+  padding: 12px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 8px;
+
+  background:
+    rgba(2, 15, 23, 0.4);
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-type-card.active {
+  border-color:
+    rgba(0, 217, 160, 0.55);
+
+  background:
+    rgba(0, 217, 160, 0.065);
+}
+
+
+.monthly-report-radio {
+  width: 16px;
+  height: 16px;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    #71868f;
+
+  border-radius: 50%;
+}
+
+
+.monthly-report-type-card.active
+.monthly-report-radio {
+  border:
+    4px solid
+    #00d9a0;
+
+  background:
+    #061923;
+}
+
+
+.monthly-report-type-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.06);
+
+  color: #00d9a0;
+
+  font-size: 10px;
+}
+
+
+.monthly-report-type-card strong {
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.monthly-report-type-card p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+/* =====================================================
+   MODAL FOOTER
+===================================================== */
+
+.monthly-report-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding:
+    13px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+}
+
+
+.monthly-report-modal-cancel,
+.monthly-report-modal-send {
+  min-width: 90px;
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  border-radius: 6px;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.monthly-report-modal-cancel {
+  border:
+    1px solid
+    rgba(145, 180, 185, 0.18);
+
+  background:
+    rgba(3, 18, 28, 0.55);
+
+  color: #9aabb2;
+}
+
+
+.monthly-report-modal-send {
+  border:
+    1px solid
+    #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .monthly-report-page {
+    padding: 12px;
+  }
+
+
+  .monthly-report-card-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .monthly-report-view-switch {
+    width: 100%;
+  }
+
+
+  .monthly-report-view-switch button {
+    flex: 1;
+  }
+
+
+  .monthly-report-chart {
+    height: 300px;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .monthly-report-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .monthly-report-send-modal {
+    width: 100%;
+  }
+
+
+  .monthly-report-modal-body {
+    padding: 13px;
+  }
+
+}

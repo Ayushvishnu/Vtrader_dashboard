@@ -1,0 +1,622 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.info-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 21px ;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   PAGE HEADING
+===================================================== */
+
+.info-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 14px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+.info-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.info-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.info-heading h2 span {
+  color: #00d9a0;
+}
+
+
+.info-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   HOW TO USE
+===================================================== */
+
+.info-help-card {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 66px;
+
+  margin-bottom: 15px;
+
+  padding: 13px 15px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 10px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 8px 24px
+    rgba(0, 0, 0, 0.08);
+}
+
+
+.info-help-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.16);
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 13px;
+}
+
+
+.info-help-card h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.info-help-card p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   HOTKEYS CARD
+===================================================== */
+
+.info-hotkeys-card {
+  margin-bottom: 15px;
+
+  padding: 16px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 10px;
+
+  background:
+    rgba(3, 18, 28, 0.34);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255,255,255,.025),
+    0 8px 25px
+    rgba(0,0,0,.08);
+}
+
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
+
+.info-section-heading {
+  margin-bottom: 13px;
+}
+
+
+.info-section-heading h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+
+.info-section-heading p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   HOTKEY CARD
+===================================================== */
+
+.info-hotkey-card {
+  height: 100%;
+  min-height: 168px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 14px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.4);
+
+  transition: 0.2s ease;
+}
+
+
+.info-hotkey-card:hover {
+  border-color:
+    rgba(0, 217, 160, 0.25);
+
+  background:
+    rgba(0, 217, 160, 0.025);
+
+  transform:
+    translateY(-1px);
+
+  box-shadow:
+    0 8px 22px
+    rgba(0, 0, 0, 0.14);
+}
+
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.info-hotkey-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.info-hotkey-icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 12px;
+}
+
+
+/* BUY */
+
+.info-hotkey-icon.buy {
+  color: #42e2ad;
+
+  background:
+    rgba(66, 226, 173, 0.08);
+}
+
+
+/* SELL */
+
+.info-hotkey-icon.sell {
+  border-color:
+    rgba(255, 89, 101, 0.15);
+
+  background:
+    rgba(255, 89, 101, 0.08);
+
+  color: #ff5965;
+}
+
+
+/* PENDING */
+
+.info-hotkey-icon.pending {
+  border-color:
+    rgba(255, 180, 60, 0.17);
+
+  background:
+    rgba(255, 180, 60, 0.09);
+
+  color: #ffb43c;
+}
+
+
+/* =====================================================
+   KEY BADGE
+===================================================== */
+
+.info-key-badge {
+  min-width: 30px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 7px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.2);
+
+  border-radius: 6px;
+
+  background:
+    rgba(255, 255, 255, 0.025);
+
+  color: #d7e3e6;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  box-shadow:
+    inset 0 -2px 0
+    rgba(255, 255, 255, 0.035);
+}
+
+
+/* =====================================================
+   HOTKEY CONTENT
+===================================================== */
+
+.info-hotkey-content {
+  flex: 1;
+
+  margin-top: 12px;
+}
+
+
+.info-hotkey-content h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.info-hotkey-content p {
+  margin: 5px 0 0;
+
+  color: #71868f;
+
+  font-size: 8px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   HOTKEY ACTION
+===================================================== */
+
+.info-hotkey-action {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  margin-top: 12px;
+
+  padding-top: 10px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  color: #00d9a0;
+
+  font-size: 8px;
+  font-weight: 600;
+}
+
+
+.info-hotkey-action i {
+  font-size: 7px;
+}
+
+
+.info-hotkey-action.sell {
+  color: #ff5965;
+}
+
+
+.info-hotkey-action.pending {
+  color: #ffb43c;
+}
+
+
+/* =====================================================
+   BOTTOM INFORMATION
+===================================================== */
+
+.info-bottom-row {
+  margin-bottom: 12px;
+}
+
+
+.info-bottom-card {
+  min-height: 65px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 12px 14px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 9px;
+
+  background:
+    rgba(3, 18, 28, 0.34);
+}
+
+
+.info-bottom-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 11px;
+}
+
+
+.info-bottom-card h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.info-bottom-card p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 8px;
+
+  line-height: 1.45;
+}
+
+
+/* =====================================================
+   ESC NOTE
+===================================================== */
+
+.info-escape-note {
+  min-height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 7px 12px;
+
+  border:
+    1px dashed
+    rgba(0, 217, 160, 0.23);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.025);
+
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+.info-escape-note > i {
+  color: #ff5965;
+
+  font-size: 8px;
+}
+
+
+.info-escape-note kbd {
+  min-width: 30px;
+  height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 6px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.2);
+
+  border-radius: 5px;
+
+  background:
+    rgba(2, 15, 23, 0.65);
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 8px;
+
+  box-shadow:
+    inset 0 -2px 0
+    rgba(255, 255, 255, 0.035);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .info-page {
+    padding: 12px;
+  }
+
+
+  .info-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .info-hotkeys-card {
+    padding: 12px;
+  }
+
+
+  .info-hotkey-card {
+    min-height: 155px;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .info-help-card {
+    align-items: flex-start;
+  }
+
+
+  .info-escape-note {
+    flex-wrap: wrap;
+  }
+
+}

@@ -1,0 +1,730 @@
+.pending-modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 6000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 18px;
+
+  background: rgba(0, 7, 13, 0.78);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+.pending-modal {
+  width: min(1150px, 97vw);
+
+  max-height: 92vh;
+
+  overflow-y: auto;
+
+  border: 1px solid rgba(115, 205, 195, 0.24);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 24, 33, 0.99),
+      rgba(2, 14, 23, 0.99)
+    );
+
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.55);
+}
+
+
+/* HEADER */
+
+.pending-modal-header {
+  min-height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 11px 14px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: rgba(0, 68, 59, 0.12);
+}
+
+
+.pending-title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.pending-title-icon {
+  width: 36px;
+  height: 36px;
+
+  border-radius: 9px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00dba2;
+
+  background: rgba(0, 218, 160, 0.1);
+
+  border: 1px solid rgba(0, 218, 160, 0.14);
+}
+
+
+.pending-title h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+
+.pending-title p {
+  margin: 3px 0 0;
+
+  color: #7c929b;
+
+  font-size: 8px;
+}
+
+
+.pending-header-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.pending-bulk-btn {
+  height: 31px;
+
+  padding: 0 11px;
+
+  border: 1px solid rgba(125, 185, 185, 0.14);
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #91a5ad;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.pending-bulk-btn i {
+  margin-right: 5px;
+}
+
+
+.pending-bulk-btn:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.pending-bulk-btn.cancel {
+  color: #ff737d;
+}
+
+
+.pending-close-btn {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #80949d;
+
+  font-size: 17px;
+
+  cursor: pointer;
+}
+
+
+/* BODY */
+
+.pending-modal-body {
+  padding: 14px;
+}
+
+
+/* CLIENT CARD */
+
+.pending-client-card {
+  margin-bottom: 12px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(120, 190, 185, 0.14);
+
+  border-radius: 9px;
+
+  background: rgba(1, 18, 25, 0.3);
+}
+
+
+.pending-client-header {
+  min-height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 12px;
+
+  background: rgba(0, 211, 153, 0.055);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+.pending-client-info {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.pending-avatar {
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 210, 155, 0.1);
+
+  color: #00dda2;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.pending-client-info strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 9px;
+}
+
+
+.pending-client-info span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #738992;
+
+  font-size: 7px;
+}
+
+
+.pending-count-badge {
+  padding: 4px 8px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 185, 60, 0.1);
+
+  color: #ffbe57;
+
+  font-size: 7px;
+}
+
+
+/* BROKER */
+
+.pending-broker-card {
+  margin: 9px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(120, 180, 180, 0.11);
+
+  border-radius: 7px;
+
+  background: rgba(3, 21, 28, 0.36);
+}
+
+
+.pending-broker-header {
+  min-height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 10px;
+
+  background: rgba(255, 255, 255, 0.018);
+}
+
+
+.pending-broker-header strong {
+  display: block;
+
+  color: #dce6e9;
+
+  font-size: 8px;
+}
+
+
+.pending-broker-header span {
+  display: block;
+
+  margin-top: 2px;
+
+  color: #6f858e;
+
+  font-size: 7px;
+}
+
+
+.pending-broker-status {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.pending-broker-status strong {
+  font-size: 7px;
+}
+
+
+.pending-success {
+  padding: 4px 7px;
+
+  border-radius: 20px;
+
+  background: rgba(0, 211, 153, 0.08);
+
+  color: #00d99e !important;
+
+  font-size: 6px !important;
+}
+
+
+/* SELECT */
+
+.pending-select-all {
+  min-height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 10px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.035);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.035);
+
+  color: #778d96;
+
+  font-size: 7px;
+}
+
+
+.pending-select-all label {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.pending-select-all input {
+  accent-color: #00d99e;
+}
+
+
+/* TABLE */
+
+.pending-table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+.pending-table {
+  width: 100%;
+
+  min-width: 980px;
+
+  border-collapse: collapse;
+}
+
+
+.pending-table thead {
+  background: rgba(0, 104, 87, 0.55);
+}
+
+
+.pending-table th {
+  height: 33px;
+
+  padding: 0 8px;
+
+  color: #e0eaea;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  white-space: nowrap;
+
+  text-align: left;
+}
+
+
+.pending-table td {
+  height: 43px;
+
+  padding: 0 8px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+
+  color: #cbd7dc;
+
+  font-size: 7px;
+
+  white-space: nowrap;
+}
+
+
+.pending-table input[type="checkbox"] {
+  accent-color: #00d99e;
+}
+
+
+.pending-sl-badge {
+  width: 21px;
+  height: 21px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: rgba(0, 210, 155, 0.1);
+
+  color: #00d99e;
+
+  font-weight: 700;
+}
+
+
+.pending-order-id {
+  color: #00d99e !important;
+
+  font-weight: 600;
+}
+
+
+.pending-buy {
+  color: #00d99e !important;
+
+  font-weight: 700;
+}
+
+
+.pending-sell {
+  color: #ff606b !important;
+
+  font-weight: 700;
+}
+
+
+/* STATUS */
+
+.pending-status-badge {
+  display: inline-flex;
+
+  padding: 4px 7px;
+
+  border-radius: 20px;
+
+  font-size: 6px;
+}
+
+
+.pending-status-badge.open {
+  background: rgba(255, 187, 58, 0.1);
+
+  color: #ffc65a;
+}
+
+
+.pending-status-badge.trigger {
+  background: rgba(255, 160, 40, 0.1);
+
+  color: #ffad45;
+}
+
+
+/* ACTIONS */
+
+.pending-row-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+.pending-edit-btn,
+.pending-delete-btn {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 8px;
+}
+
+
+.pending-edit-btn {
+  border: 1px solid rgba(0, 218, 160, 0.38);
+
+  background: rgba(0, 218, 160, 0.07);
+
+  color: #00d99e;
+}
+
+
+.pending-delete-btn {
+  border: 1px solid rgba(255, 75, 90, 0.4);
+
+  background: rgba(255, 65, 80, 0.06);
+
+  color: #ff5965;
+}
+
+
+/* EMPTY */
+
+.pending-empty {
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #70858f;
+}
+
+
+.pending-empty i {
+  margin-bottom: 10px;
+
+  color: #00d99e;
+
+  font-size: 27px;
+}
+
+
+.pending-empty h4 {
+  margin: 0;
+
+  color: #d9e3e6;
+
+  font-size: 12px;
+}
+
+
+.pending-empty p {
+  margin-top: 5px;
+
+  font-size: 8px;
+}
+
+
+/* =========================================
+   EDIT MODAL
+========================================= */
+
+.pending-edit-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 6100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 6, 11, 0.68);
+
+  backdrop-filter: blur(4px);
+}
+
+
+.pending-edit-modal {
+  width: min(500px, 94vw);
+
+  border: 1px solid rgba(120, 195, 190, 0.22);
+
+  border-radius: 10px;
+
+  background: #061923;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.5);
+}
+
+
+.pending-edit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 14px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.pending-edit-header h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+
+.pending-edit-header p {
+  margin: 3px 0 0;
+
+  color: #7b9099;
+
+  font-size: 8px;
+}
+
+
+.pending-edit-header button {
+  border: none;
+
+  background: transparent;
+
+  color: #8599a1;
+
+  cursor: pointer;
+}
+
+
+.pending-edit-body {
+  padding: 15px;
+}
+
+
+.pending-edit-body label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #869aa3;
+
+  font-size: 8px;
+}
+
+
+.pending-edit-body input,
+.pending-edit-body select {
+  width: 100%;
+  height: 34px;
+
+  border: 1px solid rgba(120, 185, 185, 0.18);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  padding: 0 9px;
+
+  background: rgba(2, 14, 22, 0.7);
+
+  color: #ffffff;
+
+  font-size: 8px;
+}
+
+
+.pending-edit-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding: 10px 14px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+
+.pending-edit-footer button {
+  height: 31px;
+
+  padding: 0 12px;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.pending-edit-cancel {
+  border: 1px solid rgba(150, 175, 185, 0.15);
+
+  background: transparent;
+
+  color: #95a7af;
+}
+
+
+.pending-edit-save {
+  border: none;
+
+  background: #00aa7a;
+
+  color: #ffffff;
+}

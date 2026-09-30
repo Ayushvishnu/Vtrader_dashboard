@@ -1,0 +1,822 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.notification-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 21px ;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.notification-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 14px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+.notification-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.notification-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.notification-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   CONNECTION
+===================================================== */
+
+.notification-connection {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-bottom: 16px;
+
+  padding: 12px;
+
+  border:
+    1px dashed
+    rgba(0, 217, 160, 0.24);
+
+  border-radius: 10px;
+
+  background:
+    rgba(0, 217, 160, 0.025);
+
+  color: #83969e;
+
+  font-size: 10px;
+}
+
+
+.notification-connection i {
+  color: #00d9a0;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.notification-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 15px;
+
+  padding: 12px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 10px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+}
+
+
+/* =====================================================
+   TABS
+===================================================== */
+
+.notification-tabs {
+  min-width: 250px;
+
+  display: flex;
+
+  padding: 3px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.16);
+
+  border-radius: 8px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+}
+
+
+.notification-tabs button {
+  height: 36px;
+
+  flex: 1;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  color: #82949c;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.notification-tabs button:hover {
+  color: #00d9a0;
+}
+
+
+.notification-tabs button.active {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  background:
+    rgba(0, 217, 160, 0.1);
+
+  color: #00d9a0;
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.notification-filters {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.notification-filters select {
+  width: 160px;
+  height: 38px;
+
+  padding: 0 11px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.6);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.notification-filters select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+
+.notification-filters select:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.notification-search {
+  position: relative;
+
+  width: 270px;
+}
+
+
+.notification-search i {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+
+  transform:
+    translateY(-50%);
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+.notification-search input {
+  width: 100%;
+  height: 38px;
+
+  padding:
+    0
+    12px
+    0
+    35px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.6);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.notification-search input::placeholder {
+  color: #617781;
+}
+
+
+.notification-search input:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.notification-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 10px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.notification-card-header {
+  min-height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 13px 16px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.notification-card-title {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.notification-card-title h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.notification-count {
+  min-width: 28px;
+  height: 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 8px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 20px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+.notification-live {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+.notification-live span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #00d9a0;
+
+  box-shadow:
+    0 0 8px
+    rgba(0, 217, 160, 0.5);
+}
+
+
+/* =====================================================
+   TABLE WRAP
+===================================================== */
+
+.notification-table-wrap {
+  width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.notification-table {
+  width: 100%;
+
+  min-width: 780px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.notification-table th {
+  height: 42px;
+
+  padding:
+    10px
+    16px;
+
+  background:rgba(5,41,50,1) !important;
+
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.65px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.notification-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.notification-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+
+.notification-table td {
+  height: 53px;
+
+  padding:
+    10px
+    16px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(3, 18, 28, 0.26);
+
+  color: #bccbd0;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+}
+
+
+.notification-table
+tbody tr:nth-child(even) td {
+  background:
+    rgba(6, 25, 35, 0.32);
+}
+
+
+.notification-table
+tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.045);
+}
+
+
+/* =====================================================
+   TIME
+===================================================== */
+
+.notification-time {
+  color: #a8b8bd !important;
+}
+
+
+/* =====================================================
+   ALERT BADGE
+===================================================== */
+
+.notification-alert-badge {
+  min-width: 102px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    6px
+    11px;
+
+  border-radius: 20px;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* BUY FRESH */
+
+.notification-alert-badge.buy-fresh {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  background:
+    rgba(0, 217, 160, 0.1);
+
+  color: #00d9a0;
+}
+
+
+/* AVG */
+
+.notification-alert-badge.buy-average {
+  border:
+    1px solid
+    rgba(255, 180, 60, 0.22);
+
+  background:
+    rgba(255, 180, 60, 0.11);
+
+  color: #ffb43c;
+}
+
+
+/* SELL */
+
+.notification-alert-badge.sell {
+  border:
+    1px solid
+    rgba(255, 89, 101, 0.22);
+
+  background:
+    rgba(255, 89, 101, 0.1);
+
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   STOCK
+===================================================== */
+
+.notification-stock {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.notification-stock strong {
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+.notification-stock span {
+  margin-top: 3px;
+
+  color: #657a83;
+
+  font-size: 7px;
+}
+
+
+/* =====================================================
+   PRICE
+===================================================== */
+
+.notification-price {
+  color: #ffffff !important;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.notification-empty {
+  height: 120px !important;
+
+  color: #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.notification-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding:
+    12px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(0, 20, 29, 0.18);
+}
+
+
+.notification-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.5);
+
+  color: #81969e;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.notification-pagination
+button:hover:not(:disabled) {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+
+  background:
+    rgba(0, 217, 160, 0.06);
+
+  color: #00d9a0;
+}
+
+
+.notification-pagination button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.notification-pagination span {
+  min-width: 58px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+
+  color: #d5e1e4;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .notification-page {
+    padding: 12px;
+  }
+
+
+  .notification-toolbar {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .notification-tabs {
+    width: 100%;
+  }
+
+
+  .notification-filters {
+    width: 100%;
+  }
+
+
+  .notification-filters select,
+  .notification-search {
+    flex: 1;
+
+    width: auto;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .notification-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .notification-filters {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .notification-filters select,
+  .notification-search {
+    width: 100%;
+  }
+
+
+  .notification-card-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+}

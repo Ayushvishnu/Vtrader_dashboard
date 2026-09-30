@@ -1,0 +1,1598 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.addgroup-page {
+  width: 100%;
+  min-height: 100%;
+
+  /* padding: 18px 6px 28px; */
+    padding: 21px ;
+
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.addgroup-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.addgroup-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.addgroup-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.addgroup-heading h2 span {
+  color: #00d9a0;
+}
+
+
+.addgroup-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.addgroup-card {
+  width: 100%;
+
+  margin-bottom: 17px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 10px 28px
+    rgba(0, 0, 0, 0.11);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.addgroup-card-header {
+  padding: 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(0, 45, 45, 0.06);
+}
+
+
+.addgroup-card-header h3,
+.addgroup-list-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.addgroup-card-header p,
+.addgroup-list-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.addgroup-card-body {
+  padding: 20px 17px 17px;
+}
+
+
+/* =====================================================
+   FORM
+===================================================== */
+
+.addgroup-field {
+  width: 100%;
+}
+
+
+.addgroup-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aabb2;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.addgroup-field label span {
+  margin-left: 2px;
+
+  color: #ff5965;
+}
+
+
+.addgroup-field input,
+.addgroup-field textarea {
+  width: 100%;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  transition: 0.2s ease;
+}
+
+
+.addgroup-field input {
+  height: 41px;
+
+  padding: 0 12px;
+}
+
+
+.addgroup-field textarea {
+  min-height: 78px;
+
+  padding: 11px 12px;
+
+  resize: vertical;
+}
+
+
+.addgroup-field input::placeholder,
+.addgroup-field textarea::placeholder {
+  color: #617781;
+}
+
+
+.addgroup-field input:focus,
+.addgroup-field textarea:focus {
+  border-color: #00b985;
+
+  background:
+    rgba(2, 15, 23, 0.78);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   ADD BUTTON
+===================================================== */
+
+.addgroup-form-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 17px;
+}
+
+
+.addgroup-primary-btn {
+  min-width: 112px;
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border:
+    1px solid
+    #00be67;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+.addgroup-primary-btn:hover {
+  filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   GROUP LIST HEADER
+===================================================== */
+
+.addgroup-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 15px 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.addgroup-header-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.addgroup-search {
+  position: relative;
+
+  width: 220px;
+}
+
+
+.addgroup-search i {
+  position: absolute;
+
+  top: 50%;
+  left: 11px;
+
+  transform:
+    translateY(-50%);
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+.addgroup-search input {
+  width: 100%;
+  height: 36px;
+
+  padding:
+    0
+    11px
+    0
+    33px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.6);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.addgroup-search input::placeholder {
+  color: #617781;
+}
+
+
+.addgroup-search input:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   COUNT
+===================================================== */
+
+.addgroup-count {
+  padding:
+    7px
+    13px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.13);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TABLE WRAP
+===================================================== */
+
+.addgroup-table-wrap {
+  width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+.addgroup-table-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+
+.addgroup-table-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.addgroup-table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+
+  background:
+    rgba(0, 217, 160, 0.25);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.addgroup-table {
+  width: 100%;
+
+  min-width: 760px;
+
+  border-collapse: separate;
+
+  border-spacing: 0;
+
+  background: transparent;
+}
+
+
+.addgroup-table thead th {
+  height: 41px;
+
+  padding:
+    10px
+    14px;
+
+  border: 0;
+
+   background:rgba(5,41,50,1) !important;
+
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.addgroup-table thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.addgroup-table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+
+.addgroup-table tbody td {
+  min-height: 49px;
+
+  padding:
+    10px
+    14px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(3, 18, 28, 0.28);
+
+  color: #b8c8cd;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+}
+
+
+.addgroup-table tbody tr:nth-child(even) td {
+  background:
+    rgba(6, 25, 35, 0.34);
+}
+
+
+.addgroup-table tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   TABLE VALUES
+===================================================== */
+
+.addgroup-slno {
+  min-width: 26px;
+  height: 26px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+.addgroup-name {
+  color: #00d9a0 !important;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.addgroup-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.addgroup-actions button {
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding:
+    0
+    9px;
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.55);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+/* VIEW */
+
+.addgroup-view-btn {
+  border:
+    1px solid
+    rgba(74, 165, 255, 0.28);
+
+  color: #67b5ff;
+}
+
+
+.addgroup-view-btn:hover {
+  background:
+    rgba(74, 165, 255, 0.09);
+}
+
+
+/* EDIT */
+
+.addgroup-edit-btn {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.24);
+
+  color: #00d9a0;
+}
+
+
+.addgroup-edit-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.09);
+}
+
+
+/* DELETE */
+
+.addgroup-delete-btn {
+  border:
+    1px solid
+    rgba(255, 89, 101, 0.26);
+
+  color: #ff5965;
+}
+
+
+.addgroup-delete-btn:hover {
+  background:
+    rgba(255, 89, 101, 0.09);
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.addgroup-empty {
+  height: 100px;
+
+  color: #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.addgroup-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding:
+    12px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(0, 20, 29, 0.18);
+}
+
+
+.addgroup-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.5);
+
+  color: #81969e;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.addgroup-pagination button:hover:not(:disabled) {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+
+  background:
+    rgba(0, 217, 160, 0.06);
+
+  color: #00d9a0;
+}
+
+
+.addgroup-pagination button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.addgroup-pagination span {
+  min-width: 57px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+
+  color: #d5e1e4;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.addgroup-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0, 0, 0, 0.68);
+
+  backdrop-filter: blur(5px);
+}
+
+
+.addgroup-modal {
+  width: min(
+    440px,
+    95vw
+  );
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 11px;
+
+  background: #061923;
+
+  color: #dce7ea;
+
+  box-shadow:
+    0 22px 58px
+    rgba(0, 0, 0, 0.48);
+}
+
+
+.addgroup-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 217, 160, 0.08),
+      rgba(3, 18, 28, 0.95)
+    );
+}
+
+
+.addgroup-modal-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+
+.addgroup-modal-header p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+.addgroup-modal-header > button {
+  width: 29px;
+  height: 29px;
+
+  border: none;
+  border-radius: 6px;
+
+  background:
+    rgba(255, 255, 255, 0.035);
+
+  color: #81939b;
+
+  cursor: pointer;
+}
+
+
+.addgroup-modal-header > button:hover {
+  background:
+    rgba(255, 89, 101, 0.08);
+
+  color: #ff5965;
+}
+
+
+.addgroup-modal-body {
+  padding: 18px;
+}
+
+
+.addgroup-modal-description {
+  margin-top: 14px;
+}
+
+
+.addgroup-view-row {
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 12px 0;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.addgroup-view-row:last-child {
+  border-bottom: 0;
+}
+
+
+.addgroup-view-row span {
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+.addgroup-view-row strong {
+  color: #ffffff;
+
+  font-size: 10px;
+
+  text-align: right;
+}
+
+
+.addgroup-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding:
+    13px
+    18px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background:
+    rgba(2, 15, 23, 0.78);
+}
+
+
+.addgroup-modal-footer button {
+  min-width: 85px;
+  height: 36px;
+
+  padding: 0 13px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.addgroup-modal-footer > button:not(.save) {
+  border:
+    1px solid
+    rgba(145, 180, 185, 0.18);
+
+  background:
+    rgba(3, 18, 28, 0.55);
+
+  color: #9aabb2;
+}
+
+
+.addgroup-modal-footer .save {
+  border:
+    1px solid
+    #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (
+  max-width: 767px
+) {
+
+  .addgroup-page {
+    padding: 12px;
+  }
+
+
+  .addgroup-list-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .addgroup-header-actions {
+    width: 100%;
+  }
+
+
+  .addgroup-search {
+    flex: 1;
+
+    width: auto;
+  }
+
+
+  .addgroup-actions {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (
+  max-width: 575px
+) {
+
+  .addgroup-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .addgroup-card-body {
+    padding: 15px;
+  }
+
+
+  .addgroup-header-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .addgroup-search {
+    width: 100%;
+  }
+
+
+  .addgroup-count {
+    width: fit-content;
+  }
+
+
+  .addgroup-primary-btn {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   GROUP DETAILS MODAL
+===================================================== */
+
+.addgroup-details-modal {
+  width: min(520px, 95vw);
+
+  max-height: 90vh;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 12px;
+
+  background: #061923;
+
+  color: #dce7ea;
+
+  box-shadow:
+    0 24px 65px
+    rgba(0, 0, 0, 0.5);
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.addgroup-details-header {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 16px 18px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 217, 160, 0.06),
+      rgba(3, 18, 28, 0.95)
+    );
+}
+
+
+.addgroup-details-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.addgroup-details-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+.addgroup-details-close-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background:
+    rgba(255, 255, 255, 0.03);
+
+  color: #83969e;
+
+  font-size: 11px;
+
+  cursor: pointer;
+}
+
+
+.addgroup-details-close-icon:hover {
+  background:
+    rgba(255, 89, 101, 0.08);
+
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.addgroup-details-body {
+  padding: 16px;
+
+  overflow-y: auto;
+
+  max-height:
+    calc(90vh - 130px);
+}
+
+
+/* =====================================================
+   GROUP SUMMARY
+===================================================== */
+
+.addgroup-details-summary {
+  min-height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 18px;
+
+  padding: 13px;
+
+  margin-bottom: 14px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 9px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 217, 160, 0.065),
+      rgba(0, 120, 90, 0.025)
+    );
+}
+
+
+.addgroup-details-group-left {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+
+.addgroup-details-group-icon {
+  width: 43px;
+  height: 43px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-size: 14px;
+}
+
+
+.addgroup-details-group-left span {
+  display: block;
+
+  margin-bottom: 4px;
+
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+.addgroup-details-group-left h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+/* CUSTOMER COUNT */
+
+.addgroup-details-customer-count {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+
+.addgroup-details-customer-count strong {
+  color: #00d9a0;
+
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+.addgroup-details-customer-count span {
+  margin-top: 4px;
+
+  color: #71868f;
+
+  font-size: 6px;
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   ASSIGNED CUSTOMER CARD
+===================================================== */
+
+.addgroup-assigned-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.38);
+}
+
+
+.addgroup-assigned-heading {
+  padding: 12px 13px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.addgroup-assigned-heading h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.addgroup-assigned-heading p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+/* =====================================================
+   CUSTOMER TABLE
+===================================================== */
+
+.addgroup-assigned-table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+.addgroup-assigned-table {
+  width: 100%;
+
+  min-width: 450px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.addgroup-assigned-table th {
+  height: 34px;
+
+  padding:
+    8px
+    10px;
+
+  background:
+    rgba(0, 217, 160, 0.09);
+
+  color: #7acbb1;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.addgroup-assigned-table td {
+  height: 45px;
+
+  padding:
+    8px
+    10px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.05);
+
+  color: #b9c7cc;
+
+  font-size: 9px;
+
+  vertical-align: middle;
+}
+
+
+.addgroup-assigned-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+.addgroup-assigned-table tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.035);
+}
+
+
+/* =====================================================
+   SL NUMBER
+===================================================== */
+
+.addgroup-customer-sl {
+  width: 24px;
+  height: 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   CUSTOMER NAME
+===================================================== */
+
+.addgroup-customer-name {
+  color: #ffffff !important;
+
+  font-weight: 500;
+}
+
+
+/* =====================================================
+   BROKER
+===================================================== */
+
+.addgroup-broker-info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.addgroup-broker-info strong {
+  color: #d8e3e6;
+
+  font-size: 9px;
+  font-weight: 500;
+}
+
+
+.addgroup-broker-info span {
+  margin-top: 2px;
+
+  color: #647982;
+
+  font-size: 6px;
+}
+
+
+/* =====================================================
+   STRATEGY
+===================================================== */
+
+.addgroup-strategy-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding:
+    4px
+    8px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 15px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.addgroup-details-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  padding:
+    12px
+    17px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background:
+    rgba(2, 15, 23, 0.78);
+}
+
+
+.addgroup-details-footer button {
+  min-width: 80px;
+  height: 34px;
+
+  border:
+    1px solid
+    rgba(145, 180, 185, 0.18);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.55);
+
+  color: #c0ced2;
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.addgroup-details-footer button:hover {
+  border-color:
+    rgba(0, 217, 160, 0.25);
+
+  background:
+    rgba(0, 217, 160, 0.05);
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 575px) {
+
+  .addgroup-details-summary {
+    align-items: flex-start;
+  }
+
+
+  .addgroup-details-customer-count {
+    min-width: 55px;
+  }
+
+
+  .addgroup-details-body {
+    padding: 12px;
+  }
+
+}

@@ -1,0 +1,1022 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.addstrategy-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 21px;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.addstrategy-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.addstrategy-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.addstrategy-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.addstrategy-heading h2 span {
+  color: #00d9a0;
+}
+
+
+.addstrategy-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.addstrategy-card {
+  width: 100%;
+
+  margin-bottom: 17px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 10px 28px
+    rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.addstrategy-card-header {
+  padding: 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(0, 45, 45, 0.06);
+}
+
+
+.addstrategy-card-header h3,
+.addstrategy-list-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.addstrategy-card-header p,
+.addstrategy-list-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.addstrategy-card-body {
+  padding: 20px 17px;
+}
+
+
+/* =====================================================
+   FIELD
+===================================================== */
+
+.addstrategy-field {
+  width: 100%;
+}
+
+
+.addstrategy-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aabb2;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.addstrategy-field label span {
+  margin-left: 2px;
+
+  color: #ff5965;
+}
+
+
+.addstrategy-field input {
+  width: 100%;
+  height: 41px;
+
+  padding: 0 12px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  transition: 0.2s ease;
+}
+
+
+.addstrategy-field input::placeholder {
+  color: #617781;
+}
+
+
+.addstrategy-field input:focus {
+  border-color: #00b985;
+
+  background:
+    rgba(2, 15, 23, 0.78);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   ADD BUTTON
+===================================================== */
+
+.addstrategy-primary-btn {
+  min-width: 120px;
+  height: 41px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border:
+    1px solid
+    #00be67;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.addstrategy-primary-btn:hover {
+  filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   LIST HEADER
+===================================================== */
+
+.addstrategy-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 15px 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.addstrategy-header-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.addstrategy-search {
+  position: relative;
+
+  width: 220px;
+}
+
+
+.addstrategy-search i {
+  position: absolute;
+
+  top: 50%;
+  left: 11px;
+
+  transform:
+    translateY(-50%);
+
+  color: #71868f;
+
+  font-size: 10px;
+
+  pointer-events: none;
+}
+
+
+.addstrategy-search input {
+  width: 100%;
+  height: 36px;
+
+  padding:
+    0
+    11px
+    0
+    33px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.6);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.addstrategy-search input::placeholder {
+  color: #617781;
+}
+
+
+.addstrategy-search input:focus {
+  border-color:
+    #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   COUNT
+===================================================== */
+
+.addstrategy-count {
+  padding:
+    7px
+    13px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.13);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.addstrategy-table-wrap {
+  width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+.addstrategy-table {
+  width: 100%;
+
+  min-width: 600px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: transparent;
+}
+
+
+.addstrategy-table th {
+  height: 41px;
+
+  padding:
+    10px
+    14px;
+
+  border: 0;
+
+  background:
+  rgba(5, 41, 50, 1);
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.addstrategy-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.addstrategy-table th:last-child {
+  border-top-right-radius: 8px;
+
+  text-align: center;
+}
+
+
+.addstrategy-table td {
+  height: 48px;
+
+  padding:
+    9px
+    14px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.055);
+
+  background:
+    rgba(3,18,28,.28);
+
+  color: #b8c8cd;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+}
+
+
+.addstrategy-table tbody tr:nth-child(even) td {
+  background:
+    rgba(6,25,35,.34);
+}
+
+
+.addstrategy-table tbody tr:hover td {
+  background:
+    rgba(0,217,160,.05);
+}
+
+
+/* =====================================================
+   SL NO
+===================================================== */
+
+.addstrategy-slno {
+  width: 26px;
+  height: 26px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(0,217,160,.14);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0,217,160,.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   STRATEGY NAME
+===================================================== */
+
+.addstrategy-name {
+  color:
+    #00d9a0 !important;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.addstrategy-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+}
+
+
+.addstrategy-actions button {
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding:
+    0
+    9px;
+
+  border-radius: 6px;
+
+  background:
+    rgba(2,15,23,.55);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* EDIT */
+
+.addstrategy-edit-btn {
+  border:
+    1px solid
+    rgba(0,217,160,.24);
+
+  color:
+    #00d9a0;
+}
+
+
+.addstrategy-edit-btn:hover {
+  background:
+    rgba(0,217,160,.09);
+}
+
+
+/* DELETE */
+
+.addstrategy-delete-btn {
+  border:
+    1px solid
+    rgba(255,89,101,.26);
+
+  color:
+    #ff5965;
+}
+
+
+.addstrategy-delete-btn:hover {
+  background:
+    rgba(255,89,101,.09);
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.addstrategy-empty {
+  height: 100px;
+
+  color:
+    #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.addstrategy-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding:
+    12px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.055);
+
+  background:
+    rgba(0,20,29,.18);
+}
+
+
+.addstrategy-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135,185,190,.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3,18,28,.5);
+
+  color:
+    #81969e;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.addstrategy-pagination button:hover:not(:disabled) {
+  border-color:
+    rgba(0,217,160,.28);
+
+  background:
+    rgba(0,217,160,.06);
+
+  color:
+    #00d9a0;
+}
+
+
+.addstrategy-pagination button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.addstrategy-pagination span {
+  min-width: 58px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135,185,190,.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2,15,23,.45);
+
+  color:
+    #d5e1e4;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.addstrategy-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0,0,0,.68);
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* =====================================================
+   EDIT MODAL
+===================================================== */
+
+.addstrategy-edit-modal {
+  width: min(
+    460px,
+    95vw
+  );
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(0,217,160,.18);
+
+  border-radius: 11px;
+
+  background:
+    #061923;
+
+  color:
+    #dce7ea;
+
+  box-shadow:
+    0 22px 58px
+    rgba(0,0,0,.5);
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.addstrategy-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding:
+    16px
+    17px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,217,160,.08),
+      rgba(3,18,28,.95)
+    );
+}
+
+
+.addstrategy-modal-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.addstrategy-modal-header p {
+  margin: 4px 0 0;
+
+  color:
+    #71868f;
+
+  font-size: 9px;
+}
+
+
+.addstrategy-modal-close {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background:
+    rgba(255,255,255,.03);
+
+  color:
+    #83969e;
+
+  cursor: pointer;
+}
+
+
+.addstrategy-modal-close:hover {
+  background:
+    rgba(255,89,101,.08);
+
+  color:
+    #ff5965;
+}
+
+
+/* =====================================================
+   MODAL BODY
+===================================================== */
+
+.addstrategy-modal-body {
+  padding: 18px;
+}
+
+
+/* =====================================================
+   MODAL FOOTER
+===================================================== */
+
+.addstrategy-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding:
+    13px
+    18px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.06);
+
+  background:
+    rgba(2,15,23,.78);
+}
+
+
+.addstrategy-modal-cancel,
+.addstrategy-modal-save {
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding:
+    0
+    13px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.addstrategy-modal-cancel {
+  border:
+    1px solid
+    rgba(145,180,185,.18);
+
+  background:
+    rgba(3,18,28,.55);
+
+  color:
+    #9aabb2;
+}
+
+
+.addstrategy-modal-cancel:hover {
+  background:
+    rgba(0,217,160,.05);
+
+  color:
+    #ffffff;
+}
+
+
+.addstrategy-modal-save {
+  border:
+    1px solid
+    #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color:
+    #ffffff;
+}
+
+
+.addstrategy-modal-save:hover {
+  filter:
+    brightness(1.08);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .addstrategy-page {
+    padding: 12px;
+  }
+
+
+  .addstrategy-list-header {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+  }
+
+
+  .addstrategy-header-actions {
+    width: 100%;
+  }
+
+
+  .addstrategy-search {
+    flex: 1;
+
+    width: auto;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .addstrategy-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .addstrategy-card-body {
+    padding: 15px;
+  }
+
+
+  .addstrategy-header-actions {
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+  }
+
+
+  .addstrategy-search {
+    width: 100%;
+  }
+
+
+  .addstrategy-count {
+    width:
+      fit-content;
+  }
+
+
+  .addstrategy-primary-btn {
+    width: 100%;
+  }
+
+}

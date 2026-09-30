@@ -1,0 +1,2239 @@
+/* =====================================================
+   ADD USER - VITTALOKHI THEME
+===================================================== */
+
+.adduser-wrapper {
+  width: 100%;
+  min-height: 100%;
+  /* padding: 18px 26px 28px; */
+  padding: 21px;
+  background: transparent;
+  color: #d8e5e8;
+}
+
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+.adduser-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.adduser-title-icon {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(0, 217, 160, 0.2);
+  border-radius: 9px;
+
+  background: rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+  font-size: 15px;
+}
+
+.adduser-title h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.adduser-title h2 span {
+  color: #00d9a0;
+}
+
+.adduser-title p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.adduser-form-card,
+.adduser-users-card {
+  width: 100%;
+
+  border: 1px solid rgba(140, 190, 195, 0.16);
+  border-radius: 11px;
+
+  background: rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025),
+    0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.adduser-form-card {
+  padding: 20px;
+}
+
+.adduser-form-header {
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.adduser-form-header h3,
+.adduser-users-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.adduser-form-header p,
+.adduser-users-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   FORM FIELDS
+===================================================== */
+
+.adduser-field {
+  width: 100%;
+}
+
+.adduser-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aabb2;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.adduser-field label span {
+  color: #ff5965;
+}
+
+.adduser-input-wrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+.adduser-input-wrapper > i {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+
+  z-index: 2;
+
+  color: #00d9a0;
+
+  font-size: 11px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+.adduser-input-wrapper input,
+.adduser-input-wrapper select {
+  width: 100%;
+  height: 40px;
+
+  padding: 0 12px 0 36px;
+
+  border: 1px solid rgba(135, 185, 190, 0.18);
+  border-radius: 7px;
+
+  outline: none;
+
+  background: rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 11px;
+
+  transition: 0.2s ease;
+}
+
+.adduser-input-wrapper input::placeholder {
+  color: #617781;
+}
+
+.adduser-input-wrapper select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+.adduser-input-wrapper input:hover,
+.adduser-input-wrapper select:hover {
+  border-color: rgba(0, 217, 160, 0.24);
+}
+
+.adduser-input-wrapper input:focus,
+.adduser-input-wrapper select:focus {
+  border-color: #00b985;
+
+  background: rgba(2, 15, 23, 0.8);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   PASSWORD
+===================================================== */
+
+.adduser-input-wrapper input {
+  padding-right: 42px;
+}
+
+.adduser-password-eye {
+  position: absolute;
+
+  top: 50%;
+  right: 8px;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: #71868f;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+
+.adduser-password-eye:hover {
+  background: rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+}
+
+.adduser-password-eye i {
+  position: static;
+
+  font-size: 12px;
+
+  transform: none;
+}
+
+
+/* =====================================================
+   BRANCH CHIPS
+===================================================== */
+
+.adduser-selected-branches {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 8px;
+}
+
+.adduser-branch-chip {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 5px 9px;
+
+  border: 1px solid rgba(0, 217, 160, 0.18);
+  border-radius: 6px;
+
+  background: rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.adduser-branch-chip button {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #00d9a0;
+
+  cursor: pointer;
+}
+
+.adduser-branch-chip button:hover {
+  background: rgba(255, 89, 101, 0.1);
+
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   FORM ACTIONS
+===================================================== */
+
+.adduser-form-actions {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 9px;
+
+  margin-top: 22px;
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.055);
+}
+
+.adduser-cancel-btn,
+.adduser-submit-btn {
+  min-width: 100px;
+  height: 38px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.adduser-cancel-btn {
+  border: 1px solid rgba(145, 180, 185, 0.18);
+
+  background: rgba(3, 18, 28, 0.55);
+
+  color: #9aabb2;
+}
+
+.adduser-cancel-btn:hover {
+  border-color: rgba(0, 217, 160, 0.25);
+
+  background: rgba(0, 217, 160, 0.05);
+
+  color: #ffffff;
+}
+
+.adduser-submit-btn {
+  border: 1px solid #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 5px 14px
+    rgba(0, 180, 120, 0.11);
+}
+
+.adduser-submit-btn:hover {
+  filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   USERS CARD
+===================================================== */
+
+.adduser-users-card {
+  overflow: hidden;
+
+  margin-top: 18px;
+}
+
+
+/* =====================================================
+   USERS HEADER
+===================================================== */
+
+.adduser-users-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 17px 19px;
+}
+
+.adduser-header-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+/* =====================================================
+   VIEW SWITCH
+===================================================== */
+
+.adduser-view-switch {
+  display: flex;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(135, 185, 190, 0.17);
+  border-radius: 7px;
+
+  background: rgba(2, 15, 23, 0.58);
+}
+
+.adduser-view-switch button {
+  width: 36px;
+  height: 31px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-right:
+    1px solid rgba(135, 185, 190, 0.14);
+
+  background: transparent;
+
+  color: #748991;
+
+  cursor: pointer;
+}
+
+.adduser-view-switch button:last-child {
+  border-right: 0;
+}
+
+.adduser-view-switch button:hover {
+  background: rgba(0, 217, 160, 0.05);
+
+  color: #00d9a0;
+}
+
+.adduser-view-switch button.active {
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   COUNT
+===================================================== */
+
+.adduser-count {
+  padding: 7px 13px;
+
+  border: 1px solid rgba(0, 217, 160, 0.13);
+  border-radius: 7px;
+
+  background: rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   FILTER BAR
+===================================================== */
+
+.adduser-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  padding: 11px 19px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.055);
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.055);
+
+  background: rgba(0, 20, 29, 0.24);
+}
+
+.adduser-role-filters {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+.adduser-role-filters button {
+  min-width: 68px;
+  height: 33px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 10px;
+
+  border: 1px solid rgba(135, 185, 190, 0.16);
+  border-radius: 6px;
+
+  background: rgba(3, 18, 28, 0.54);
+
+  color: #8ea0a7;
+
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.adduser-role-filters button:hover {
+  border-color: rgba(0, 217, 160, 0.3);
+
+  background: rgba(0, 217, 160, 0.06);
+
+  color: #00d9a0;
+}
+
+.adduser-role-filters button.active {
+  border-color: #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* CLEAR FILTER */
+
+.adduser-role-filters .adduser-clear-filter {
+  min-width: 33px;
+  width: 33px;
+
+  padding: 0;
+
+  border-color:
+    rgba(255, 89, 101, 0.23);
+
+  color: #ff5965;
+}
+
+.adduser-role-filters .adduser-clear-filter:hover {
+  border-color: #ff5965;
+
+  background:
+    rgba(255, 89, 101, 0.08);
+
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.adduser-search {
+  position: relative;
+
+  width: 240px;
+
+  margin-left: auto;
+
+  flex-shrink: 0;
+}
+
+.adduser-search > i {
+  position: absolute;
+
+  top: 50%;
+  left: 12px;
+
+  color: #71868f;
+
+  font-size: 11px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+.adduser-search input {
+  width: 100%;
+  height: 36px;
+
+  padding: 0 12px 0 35px;
+
+  border: 1px solid rgba(135, 185, 190, 0.18);
+  border-radius: 6px;
+
+  outline: none;
+
+  background: rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+.adduser-search input::placeholder {
+  color: #617781;
+}
+
+.adduser-search input:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+.adduser-search:focus-within > i {
+  color: #00d9a0;
+}
+
+
+/* =====================================================
+   TABLE WRAPPER
+===================================================== */
+
+.adduser-table-responsive {
+  width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  background: transparent;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+.adduser-table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.adduser-table-responsive::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.adduser-table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background:
+    rgba(0, 217, 160, 0.25);
+}
+
+.adduser-table-responsive::-webkit-scrollbar-thumb:hover {
+  background:
+    rgba(0, 217, 160, 0.4);
+}
+.adduser-table {
+  width: 100%;
+
+  min-width: 700px;
+
+  margin: 0;
+
+  border: 0;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.adduser-table th {
+  padding: 11px 15px;
+
+  border-bottom:
+    1px solid rgba(0, 217, 160, 0.12);
+
+  background:rgba(5,41,50,1) !important;
+
+  color: #ffffff !important;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.adduser-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+.adduser-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+.adduser-table td {
+  padding: 11px 15px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.05);
+
+  background:
+    rgba(2, 14, 22, 0.1);
+
+  color: #c7d4d8 !important;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+}
+
+.adduser-table tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.035);
+}
+
+
+
+.adduser-user {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.adduser-avatar {
+  width: 29px;
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(0, 217, 160, 0.14);
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.adduser-name {
+  color: #ffffff !important;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   ROLE BADGES
+===================================================== */
+
+.adduser-role {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px 11px;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+.adduser-role.rm {
+  border:
+    1px solid rgba(0, 217, 160, 0.14);
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+}
+
+.adduser-role.dealer {
+  border:
+    1px solid rgba(70, 145, 255, 0.16);
+
+  background:
+    rgba(70, 145, 255, 0.09);
+
+  color: #6ea9ff;
+}
+
+.adduser-role.admin {
+  border:
+    1px solid rgba(255, 170, 70, 0.18);
+
+  background:
+    rgba(255, 170, 70, 0.09);
+
+  color: #ffae49;
+}
+
+
+/* =====================================================
+   TABLE ACTIONS
+===================================================== */
+
+.adduser-user-actions {
+  display: flex;
+
+  gap: 6px;
+}
+
+.adduser-edit-btn,
+.adduser-password-btn,
+.adduser-delete-btn {
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.55);
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+.adduser-edit-btn {
+  border:
+    1px solid rgba(0, 217, 160, 0.22);
+
+  color: #00d9a0;
+}
+
+.adduser-edit-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.08);
+}
+
+.adduser-password-btn {
+  border:
+    1px solid rgba(245, 158, 11, 0.28);
+
+  color: #f5a623;
+}
+
+.adduser-password-btn:hover {
+  background:
+    rgba(245, 158, 11, 0.09);
+}
+
+.adduser-delete-btn {
+  border:
+    1px solid rgba(255, 89, 101, 0.24);
+
+  color: #ff5965;
+}
+
+.adduser-delete-btn:hover {
+  background:
+    rgba(255, 89, 101, 0.08);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   TABLE VIEW - VITTALOKHI THEME
+===================================================== */
+
+.adduser-table-responsive {
+  width: 100%;
+
+  padding: 10px;
+
+  overflow-x: auto;
+  overflow-y: visible;
+
+  background: rgba(0, 20, 29, 0.16);
+
+  scrollbar-width: thin;
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+/* scrollbar */
+
+.adduser-table-responsive::-webkit-scrollbar {
+  height: 6px;
+}
+
+.adduser-table-responsive::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.adduser-table-responsive::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+
+  background:
+    rgba(0, 217, 160, 0.24);
+}
+
+.adduser-table-responsive::-webkit-scrollbar-thumb:hover {
+  background:
+    rgba(0, 217, 160, 0.4);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.adduser-table {
+  width: 100%;
+  min-width: 850px;
+
+  margin: 0;
+
+  border: 0;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: transparent;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.adduser-table thead th {
+  height: 42px;
+
+  padding:
+    10px
+    15px;
+
+  border: 0 !important;
+
+  background:rgba(5,41,50,1) !important;
+
+
+  color: #ffffff !important;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+}
+
+
+.adduser-table thead th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.adduser-table thead th:last-child {
+  border-top-right-radius: 8px;
+}
+
+
+/* =====================================================
+   TABLE BODY
+===================================================== */
+
+.adduser-table tbody tr {
+  transition: 0.2s ease;
+}
+
+
+.adduser-table tbody td {
+  height: 50px;
+
+  padding:
+    10px
+    15px;
+
+  border: 0 !important;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055)
+    !important;
+
+  background:
+    rgba(3, 18, 28, 0.32)
+    !important;
+
+  color:
+    #b8c8cd !important;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+}
+
+
+.adduser-table tbody tr:nth-child(even) td {
+  background:
+    rgba(6, 25, 35, 0.38)
+    !important;
+}
+
+
+.adduser-table tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.055)
+    !important;
+}
+
+
+.adduser-table tbody tr:last-child td {
+  border-bottom: 0 !important;
+}
+
+
+/* =====================================================
+   USER CELL
+===================================================== */
+
+.adduser-user {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.adduser-avatar {
+  width: 30px;
+  height: 30px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.17);
+
+  border-radius: 50%;
+
+  background:
+    rgba(0, 217, 160, 0.09);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+.adduser-name {
+  color: #ffffff !important;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   ROLE BADGES
+===================================================== */
+
+.adduser-role {
+  min-width: 54px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    5px
+    10px;
+
+  border-radius: 6px;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  letter-spacing: 0.3px;
+
+  text-transform: uppercase;
+}
+
+
+/* ADMIN */
+
+.adduser-role.admin {
+  border:
+    1px solid
+    rgba(255, 170, 70, 0.22);
+
+  background:
+    rgba(255, 170, 70, 0.1);
+
+  color: #ffae49;
+}
+
+
+/* RM */
+
+.adduser-role.rm {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  background:
+    rgba(0, 217, 160, 0.09);
+
+  color: #00d9a0;
+}
+
+
+/* DEALER */
+
+.adduser-role.dealer {
+  border:
+    1px solid
+    rgba(70, 145, 255, 0.2);
+
+  background:
+    rgba(70, 145, 255, 0.1);
+
+  color: #6ea9ff;
+}
+
+
+/* =====================================================
+   ACTION BUTTONS
+===================================================== */
+
+.adduser-user-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.adduser-edit-btn,
+.adduser-password-btn,
+.adduser-delete-btn {
+  width: 29px;
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.6);
+
+  font-size: 9px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+/* EDIT */
+
+.adduser-edit-btn {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.25);
+
+  color: #00d9a0;
+}
+
+.adduser-edit-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.1);
+
+  box-shadow:
+    0 0 10px
+    rgba(0, 217, 160, 0.08);
+}
+
+
+/* PASSWORD */
+
+.adduser-password-btn {
+  border:
+    1px solid
+    rgba(245, 158, 11, 0.3);
+
+  color: #f5a623;
+}
+
+.adduser-password-btn:hover {
+  background:
+    rgba(245, 158, 11, 0.1);
+}
+
+
+/* DELETE */
+
+.adduser-delete-btn {
+  border:
+    1px solid
+    rgba(255, 89, 101, 0.28);
+
+  color: #ff5965;
+}
+
+.adduser-delete-btn:hover {
+  background:
+    rgba(255, 89, 101, 0.1);
+}
+
+
+/* =====================================================
+   EMPTY ROW
+===================================================== */
+
+.adduser-empty {
+  height: 100px !important;
+
+  padding: 30px !important;
+
+  background:
+    rgba(3, 18, 28, 0.28)
+    !important;
+
+  color:
+    #71868f !important;
+
+  text-align: center;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   TABLE BOOTSTRAP OVERRIDES
+===================================================== */
+
+.adduser-table.table > :not(caption) > * > * {
+  box-shadow: none !important;
+}
+
+
+.adduser-table.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: #b8c8cd;
+  --bs-table-border-color: transparent;
+  --bs-table-striped-bg: transparent;
+  --bs-table-hover-bg: transparent;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .adduser-table-responsive {
+    padding: 7px;
+  }
+
+
+  .adduser-table {
+    min-width: 760px;
+  }
+
+
+  .adduser-table thead th {
+    padding:
+      9px
+      12px;
+
+    font-size: 8px;
+  }
+
+
+  .adduser-table tbody td {
+    padding:
+      9px
+      12px;
+
+    font-size: 9px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   GRID VIEW
+===================================================== */
+
+.adduser-grid {
+  padding: 16px 20px 20px;
+
+  background:
+    rgba(0, 20, 29, 0.18);
+}
+
+.adduser-grid-card {
+  height: 100%;
+
+  padding: 16px;
+
+  border:
+    1px solid rgba(135, 190, 190, 0.16);
+
+  border-radius: 9px;
+
+  background:
+    rgba(3, 18, 28, 0.38);
+
+  backdrop-filter: blur(7px);
+
+  transition: 0.2s ease;
+}
+
+.adduser-grid-card:hover {
+  border-color:
+    rgba(0, 217, 160, 0.23);
+
+  box-shadow:
+    0 10px 28px
+    rgba(0, 0, 0, 0.18);
+
+  transform:
+    translateY(-1px);
+}
+
+.adduser-grid-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+}
+
+.adduser-grid-avatar {
+  width: 42px;
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(0, 217, 160, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.adduser-grid-card h4 {
+  margin: 0 0 12px;
+
+  color: #ffffff !important;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.adduser-grid-detail {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 7px;
+
+  color: #8ea0a7;
+
+  font-size: 10px;
+}
+
+.adduser-grid-detail i {
+  color: #71868f;
+}
+
+.adduser-grid-actions {
+  display: flex;
+
+  gap: 7px;
+
+  margin-top: 15px;
+  padding-top: 11px;
+
+  border-top:
+    1px solid rgba(255, 255, 255, 0.055);
+}
+
+.adduser-grid-edit,
+.adduser-grid-password,
+.adduser-grid-delete {
+  height: 31px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+
+  gap: 5px;
+
+  border-radius: 5px;
+
+  background:
+    rgba(3, 18, 28, 0.54);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.adduser-grid-edit {
+  border:
+    1px solid rgba(0, 217, 160, 0.22);
+
+  color: #00d9a0;
+}
+
+.adduser-grid-edit:hover {
+  background:
+    rgba(0, 217, 160, 0.08);
+}
+
+.adduser-grid-password {
+  border:
+    1px solid rgba(245, 158, 11, 0.28);
+
+  color: #f5a623;
+}
+
+.adduser-grid-password:hover {
+  background:
+    rgba(245, 158, 11, 0.09);
+}
+
+.adduser-grid-delete {
+  border:
+    1px solid rgba(255, 89, 101, 0.24);
+
+  color: #ff5965;
+}
+
+.adduser-grid-delete:hover {
+  background:
+    rgba(255, 89, 101, 0.08);
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.adduser-empty,
+.adduser-grid-empty {
+  padding: 35px !important;
+
+  color: #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   EDIT MODAL
+===================================================== */
+
+#editUserModal .modal-content {
+  border:
+    1px solid rgba(0, 217, 160, 0.18);
+
+  border-radius: 11px;
+
+  background: #061923;
+
+  color: #dce7ea;
+
+  box-shadow:
+    0 22px 55px
+    rgba(0, 0, 0, 0.48);
+}
+
+#editUserModal .modal-header {
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 217, 160, 0.08),
+      rgba(3, 18, 28, 0.95)
+    );
+
+  box-shadow:
+    inset 0 3px 0
+    #00be67;
+}
+
+#editUserModal .modal-title {
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#editUserModal .btn-close {
+  filter: invert(1);
+
+  box-shadow: none;
+}
+
+#editUserModal .modal-body {
+  background: #061923;
+}
+
+#editUserModal .form-label {
+  color: #9aabb2;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+#editUserModal .form-control,
+#editUserModal .form-select {
+  border:
+    1px solid rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  box-shadow: none;
+}
+
+#editUserModal .form-select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+#editUserModal .form-control:focus,
+#editUserModal .form-select:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+#editUserModal .modal-footer {
+  border-top:
+    1px solid rgba(255,255,255,.06);
+
+  background:
+    rgba(2,15,23,.78);
+}
+
+#editUserModal .btn-light {
+  border:
+    1px solid rgba(145,180,185,.18);
+
+  background:
+    rgba(3,18,28,.55);
+
+  color: #9aabb2;
+}
+
+#editUserModal .btn-light:hover {
+  background:
+    rgba(0,217,160,.05);
+
+  color: #ffffff;
+}
+
+#editUserModal .btn-success {
+  border:
+    1px solid #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   CHANGE PASSWORD MODAL
+===================================================== */
+
+.adduser-password-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    rgba(0, 0, 0, 0.68);
+
+  backdrop-filter: blur(5px);
+}
+
+.adduser-password-modal {
+  width: 420px;
+
+  max-width:
+    calc(100% - 30px);
+
+  overflow: hidden;
+
+  border:
+    1px solid rgba(0,217,160,.18);
+
+  border-radius: 11px;
+
+  background: #061923;
+
+  color: #dce7ea;
+
+  box-shadow:
+    0 22px 58px
+    rgba(0,0,0,.48);
+}
+
+.adduser-password-modal-header {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 19px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(245,158,11,.06),
+      rgba(3,18,28,.96)
+    );
+
+  box-shadow:
+    inset 0 3px 0
+    #00be67;
+}
+
+.adduser-password-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid rgba(245,158,11,.18);
+
+  border-radius: 11px;
+
+  background:
+    rgba(245,158,11,.1);
+
+  color: #f5a623;
+}
+
+.adduser-password-modal-header h5 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.adduser-password-modal-header p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+.adduser-password-close {
+  margin-left: auto;
+
+  border: none;
+
+  background: transparent;
+
+  color: #7f929a;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.adduser-password-close:hover {
+  color: #ffffff;
+}
+
+.adduser-password-modal-body {
+  padding: 20px;
+}
+
+.adduser-password-modal-body label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #9aabb2;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.adduser-password-modal-body label span {
+  color: #ff5965;
+}
+
+.adduser-password-input {
+  position: relative;
+
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding:
+    0
+    46px
+    0
+    13px;
+
+  border:
+    1px solid rgba(135,185,190,.18);
+
+  border-radius: 7px;
+
+  background:
+    rgba(2,15,23,.62);
+}
+
+.adduser-password-input:focus-within {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0,217,160,.05);
+}
+
+.adduser-password-input i {
+  color: #71868f;
+
+  font-size: 13px;
+}
+
+.adduser-password-input input {
+  width: 100%;
+
+  border: none;
+
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 12px;
+}
+
+.adduser-password-input input::placeholder {
+  color: #617781;
+}
+
+.change-password-eye {
+  position: absolute;
+
+  top: 50%;
+  right: 10px;
+
+  width: 28px;
+  height: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: #71868f;
+
+  transform: translateY(-50%);
+
+  cursor: pointer;
+}
+
+.change-password-eye:hover,
+.change-password-eye:focus {
+  background:
+    rgba(0,217,160,.07);
+
+  color: #00d9a0;
+
+  outline: none;
+}
+
+.adduser-password-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 10px;
+
+  padding: 15px 20px;
+
+  border-top:
+    1px solid rgba(255,255,255,.06);
+
+  background:
+    rgba(2,15,23,.78);
+}
+
+.adduser-password-cancel,
+.adduser-password-save {
+  min-height: 38px;
+
+  padding: 0 15px;
+
+  border-radius: 7px;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.adduser-password-cancel {
+  border:
+    1px solid rgba(145,180,185,.18);
+
+  background:
+    rgba(3,18,28,.55);
+
+  color: #9aabb2;
+}
+
+.adduser-password-cancel:hover {
+  background:
+    rgba(0,217,160,.05);
+
+  color: #ffffff;
+}
+
+.adduser-password-save {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  border: 1px solid #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+.adduser-password-save:hover {
+  filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   DARK INPUT SUPPORT
+===================================================== */
+
+.adduser-wrapper input[type="date"],
+.adduser-wrapper input[type="time"],
+.adduser-wrapper input[type="datetime-local"] {
+  color-scheme: dark;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .adduser-wrapper {
+    padding: 12px;
+  }
+
+  .adduser-tabs {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+  .adduser-role-filters {
+    width: 100%;
+
+    overflow-x: auto;
+  }
+
+  .adduser-role-filters button {
+    flex-shrink: 0;
+  }
+
+  .adduser-search {
+    width: 100%;
+
+    margin-left: 0;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .adduser-title h2 {
+    font-size: 20px;
+  }
+
+  .adduser-form-card {
+    padding: 15px;
+  }
+
+  .adduser-users-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+  .adduser-header-actions {
+    width: 100%;
+
+    justify-content: space-between;
+  }
+
+  .adduser-form-actions {
+    width: 100%;
+  }
+
+  .adduser-form-actions button {
+    flex: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+.adduser-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding: 12px 15px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+.adduser-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.5);
+
+  color: #81969e;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+.adduser-pagination button:hover:not(:disabled) {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+
+  background:
+    rgba(0, 217, 160, 0.06);
+
+  color: #00d9a0;
+}
+
+.adduser-pagination button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.adduser-pagination span {
+  min-width: 55px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+
+  color: #d5e1e4;
+
+  font-size: 9px;
+}

@@ -1,0 +1,44 @@
+.app-layout {
+  width: 100%;
+  min-height: 100vh;
+
+  /* background:
+    linear-gradient(
+      rgba(2, 14, 22, 0.88),
+      rgba(1, 10, 18, 0.94)
+    ),
+    url("/images/sidebar-bg.png"); */
+
+
+      background:
+    /* linear-gradient(
+      rgba(2, 17, 26, 0.9),
+      rgba(2, 13, 23, 0.92)
+    ), */
+    url("/images/sidebar-bg.png");
+
+  background-size: cover;
+  /* background-position: center; */
+    /* background-position: right; */
+        /* background-position: left; */
+        background-position: bottom;
+
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+
+
+.app-main-content {
+    background: transparent;
+  min-height: 100vh;
+
+  margin-left: 245px;
+  transition: margin-left 0.3s ease;
+}
+
+.app-main-content.sidebar-is-collapsed {
+  margin-left: 64px;
+}

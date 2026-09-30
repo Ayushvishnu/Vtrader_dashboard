@@ -1,0 +1,670 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.growth-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 21px ;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.growth-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 16px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.13);
+}
+
+
+.growth-heading-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.22);
+
+  border-radius: 12px;
+
+  background:
+    rgba(0, 217, 160, 0.09);
+
+  color: #00d9a0;
+
+  font-size: 21px;
+}
+
+
+.growth-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 29px;
+  font-weight: 700;
+
+  letter-spacing: -0.3px;
+}
+
+
+.growth-heading p {
+  margin: 5px 0 0;
+
+  color: #7e9299;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+
+/* =====================================================
+   FILTER CARD
+===================================================== */
+
+.growth-filter-card {
+  margin-bottom: 18px;
+
+  padding: 18px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.17);
+
+  border-radius: 12px;
+
+  background:
+    rgba(3, 18, 28, 0.38);
+
+  backdrop-filter:
+    blur(8px);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 10px 28px
+    rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================================
+   FILTER FIELD
+===================================================== */
+
+.growth-field {
+  width: 100%;
+}
+
+
+.growth-field label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #9aadb3;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.growth-field input,
+.growth-field select {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0
+    13px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.19);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 12px;
+
+  transition:
+    0.2s ease;
+}
+
+
+.growth-field input:hover,
+.growth-field select:hover {
+  border-color:
+    rgba(0, 217, 160, 0.25);
+}
+
+
+.growth-field input:focus,
+.growth-field select:focus {
+  border-color:
+    rgba(0, 217, 160, 0.55);
+
+  background:
+    rgba(2, 15, 23, 0.78);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+.growth-field select option {
+  background:
+    #061923;
+
+  color:
+    #ffffff;
+}
+
+
+.growth-field input[type="date"] {
+  color-scheme: dark;
+}
+
+
+/* =====================================================
+   VIEW BUTTON
+===================================================== */
+
+.growth-view-btn {
+  min-width: 145px;
+  height: 46px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  padding:
+    0
+    18px;
+
+  border:
+    1px solid
+    #00be67;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 7px 18px
+    rgba(0, 190, 103, 0.13);
+
+  transition:
+    0.2s ease;
+}
+
+
+.growth-view-btn:hover {
+  filter:
+    brightness(1.08);
+
+  transform:
+    translateY(-1px);
+}
+
+
+/* =====================================================
+   CHART CARD
+===================================================== */
+
+.growth-chart-card {
+  overflow: hidden;
+
+  min-height: 520px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.17);
+
+  border-radius: 12px;
+
+  background:
+    rgba(3, 18, 28, 0.38);
+
+  backdrop-filter:
+    blur(8px);
+
+  -webkit-backdrop-filter:
+    blur(8px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 10px 28px
+    rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================================
+   CHART HEADER
+===================================================== */
+
+.growth-chart-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding:
+    20px
+    22px
+    8px;
+}
+
+
+.growth-chart-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 21px;
+  font-weight: 700;
+}
+
+
+.growth-chart-header p {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  margin: 6px 0 0;
+
+  color: #7e9299;
+
+  font-size: 11px;
+}
+
+
+.growth-chart-header p strong {
+  color: #c5d2d6;
+
+  font-weight: 600;
+}
+
+
+.growth-scope-dot {
+  margin:
+    0
+    2px;
+
+  color:
+    #52666e;
+}
+
+
+/* =====================================================
+   CHART ACTIONS
+===================================================== */
+
+.growth-chart-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 24px;
+}
+
+
+/* =====================================================
+   SEGMENT TABS
+===================================================== */
+
+.growth-segment-tabs {
+  display: flex;
+
+  min-width: 290px;
+
+  padding: 4px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.16);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+}
+
+
+.growth-segment-tabs button {
+  min-width: 92px;
+  height: 38px;
+
+  flex: 1;
+
+  padding:
+    0
+    14px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #87999f;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    0.2s ease;
+}
+
+
+.growth-segment-tabs button:hover {
+  color: #00d9a0;
+}
+
+
+.growth-segment-tabs button.active {
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 4px 12px
+    rgba(0, 190, 103, 0.12);
+}
+
+
+/* =====================================================
+   LEGEND
+===================================================== */
+
+.growth-legend {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #8a9ca3;
+
+  font-size: 11px;
+
+  white-space: nowrap;
+}
+
+
+.growth-legend > span {
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #00c17b;
+
+  box-shadow:
+    0 0 8px
+    rgba(0, 193, 123, 0.3);
+}
+
+
+/* =====================================================
+   CHART
+===================================================== */
+
+.growth-chart-container {
+  width: 100%;
+  height: 430px;
+
+  padding:
+    10px
+    14px
+    15px;
+}
+
+
+/* =====================================================
+   TOOLTIP
+===================================================== */
+
+.growth-tooltip {
+  min-width: 145px;
+
+  padding: 13px;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(5, 25, 34, 0.98);
+
+  box-shadow:
+    0 18px 42px
+    rgba(0, 0, 0, 0.36);
+}
+
+
+.growth-tooltip h4 {
+  margin:
+    0
+    0
+    10px;
+
+  padding-bottom: 8px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.growth-tooltip-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+
+.growth-tooltip-row span {
+  color: #84969d;
+
+  font-size: 10px;
+}
+
+
+.growth-tooltip-row strong {
+  color: #00d9a0;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1199px) {
+
+  .growth-chart-header {
+    flex-direction: column;
+  }
+
+
+  .growth-chart-actions {
+    width: 100%;
+
+    justify-content:
+      space-between;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .growth-page {
+    padding: 12px;
+  }
+
+
+  .growth-heading h2 {
+    font-size: 24px;
+  }
+
+
+  .growth-heading-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+
+  .growth-view-btn {
+    width: 100%;
+  }
+
+
+  .growth-chart-actions {
+    align-items: stretch;
+
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+
+  .growth-segment-tabs {
+    width: 100%;
+    min-width: 0;
+  }
+
+
+  .growth-chart-container {
+    height: 360px;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .growth-heading {
+    align-items:
+      flex-start;
+  }
+
+
+  .growth-heading h2 {
+    font-size: 22px;
+  }
+
+
+  .growth-heading p {
+    font-size: 11px;
+  }
+
+
+  .growth-filter-card {
+    padding: 14px;
+  }
+
+
+  .growth-chart-header {
+    padding:
+      16px
+      14px
+      5px;
+  }
+
+
+  .growth-chart-header h3 {
+    font-size: 18px;
+  }
+
+
+  .growth-segment-tabs button {
+    min-width: 0;
+
+    padding:
+      0
+      8px;
+
+    font-size: 10px;
+  }
+
+
+  .growth-chart-container {
+    height: 320px;
+
+    padding:
+      8px
+      4px
+      12px;
+  }
+
+}

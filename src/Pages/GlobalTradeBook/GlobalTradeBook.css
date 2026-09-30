@@ -1,0 +1,768 @@
+.global-tradebook-page {
+  min-height: calc(100vh - 52px);
+
+  padding: 18px;
+
+  color: #ffffff;
+
+  background: transparent;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.global-tradebook-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin-bottom: 16px;
+}
+
+
+.global-tradebook-heading-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(0, 215, 160, 0.25);
+
+  border-radius: 10px;
+
+  background: rgba(0, 210, 155, 0.07);
+
+  color: #00d99a;
+
+  font-size: 15px;
+}
+
+
+.global-tradebook-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.global-tradebook-heading p {
+  margin: 3px 0 0;
+
+  color: #7c9099;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   SUMMARY CARDS
+========================================= */
+
+.global-tradebook-summary {
+  margin-bottom: 18px;
+}
+
+
+.global-tradebook-stat-card {
+  min-height: 80px;
+
+  padding: 12px;
+
+  border: 1px solid rgba(170, 225, 220, 0.22);
+
+  border-radius: 9px;
+
+  background: rgba(3, 19, 29, 0.08);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+
+.global-tradebook-stat-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.global-tradebook-stat-title span {
+  color: #d5e0e4;
+
+  font-size: 8px;
+}
+
+
+.global-tradebook-stat-title i {
+  font-size: 10px;
+}
+
+
+.global-tradebook-stat-card h3 {
+  margin: 8px 0 2px;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+.global-tradebook-stat-card small {
+  color: #83969f;
+
+  font-size: 7px;
+}
+
+
+/* COLORS */
+
+.global-tradebook-stat-card.clients h3,
+.global-tradebook-stat-card.clients i {
+  color: #ffffff;
+}
+
+
+.global-tradebook-stat-card.broker h3,
+.global-tradebook-stat-card.broker i {
+  color: #9b62ff;
+}
+
+
+.global-tradebook-stat-card.success h3,
+.global-tradebook-stat-card.success i {
+  color: #00d99a;
+}
+
+
+.global-tradebook-stat-card.failed h3,
+.global-tradebook-stat-card.failed i {
+  color: #ff515d;
+}
+
+
+.global-tradebook-stat-card.trades h3,
+.global-tradebook-stat-card.trades i {
+  color: #00d99a;
+}
+
+
+/* =========================================
+   MAIN CARD
+========================================= */
+
+.global-tradebook-card {
+  overflow: hidden;
+
+  border: 1px solid rgba(170, 225, 220, 0.22);
+
+  border-radius: 12px;
+
+  background: rgba(3, 19, 29, 0.08);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.045);
+}
+
+
+/* =========================================
+   CARD HEADER
+========================================= */
+
+.global-tradebook-card-header {
+  min-height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 10px 15px;
+}
+
+
+.global-tradebook-card-header h4 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.global-tradebook-card-header p {
+  margin: 3px 0 0;
+
+  color: #758b95;
+
+  font-size: 7px;
+}
+
+
+.global-tradebook-updated {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  color: #00d99a;
+
+  font-size: 8px;
+}
+
+
+.global-updated-dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #00d99a;
+
+  box-shadow:
+    0 0 8px rgba(0, 217, 154, 0.6);
+}
+
+
+/* =========================================
+   TABLE
+========================================= */
+
+.global-tradebook-table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+.global-tradebook-table {
+  width: 100%;
+
+  min-width: 1000px;
+
+  border-collapse: collapse;
+}
+
+
+.global-tradebook-table thead {
+  background: rgba(0, 62, 69, 0.7);
+}
+
+
+.global-tradebook-table th {
+  height: 42px;
+
+  padding: 0 14px;
+
+  color: #dbe6e8;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.global-tradebook-table td {
+  height: 45px;
+
+  padding: 0 14px;
+
+  border-bottom:
+    1px solid rgba(255, 255, 255, 0.055);
+
+  color: #d0dade;
+
+  font-size: 8px;
+
+  white-space: nowrap;
+}
+
+
+.global-tradebook-table tbody tr {
+  transition: 0.2s ease;
+}
+
+
+.global-tradebook-table tbody tr:hover {
+  background: rgba(0, 210, 155, 0.025);
+}
+
+
+/* =========================================
+   SL NO
+========================================= */
+
+.global-tradebook-slno {
+  min-width: 20px;
+  height: 20px;
+
+  padding: 0 5px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 5px;
+
+  background: rgba(130, 155, 170, 0.12);
+
+  color: #c1d0d5;
+
+  font-size: 7px;
+}
+
+
+/* =========================================
+   CLIENT
+========================================= */
+
+.global-tradebook-client strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 500;
+}
+
+
+.global-tradebook-client span {
+  display: inline-flex;
+
+  margin-top: 3px;
+
+  padding: 2px 6px;
+
+  border-radius: 20px;
+
+  background: #00ad7d;
+
+  color: #ffffff;
+
+  font-size: 5px;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   BROKER
+========================================= */
+
+.global-tradebook-broker {
+  display: inline-flex;
+
+  padding: 3px 5px;
+
+  border-radius: 4px;
+
+  background: #f2ffff;
+
+  color: #00a881;
+
+  font-size: 6px;
+  font-weight: 700;
+}
+
+
+/* =========================================
+   SYMBOL
+========================================= */
+
+.global-tradebook-symbol {
+  color: #00d99a !important;
+
+  font-weight: 600;
+}
+
+
+/* BUY / SELL */
+
+.global-tradebook-buy {
+  color: #00d99a !important;
+
+  font-weight: 600;
+}
+
+
+.global-tradebook-sell {
+  color: #ff515d !important;
+
+  font-weight: 600;
+}
+
+
+/* VALUE */
+
+.global-tradebook-value {
+  color: #00d99a !important;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.global-tradebook-footer {
+  min-height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 8px 14px;
+}
+
+
+.global-tradebook-result-text {
+  color: #778b94;
+
+  font-size: 8px;
+}
+
+
+/* PAGINATION */
+
+.global-tradebook-pagination {
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+}
+
+
+.global-tradebook-pagination button {
+  min-width: 25px;
+  height: 25px;
+
+  padding: 0 6px;
+
+  border: 1px solid rgba(120, 165, 175, 0.13);
+
+  border-radius: 6px;
+
+  background: rgba(5, 21, 30, 0.55);
+
+  color: #84969f;
+
+  font-size: 7px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.global-tradebook-pagination button:hover {
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 210, 155, 0.25);
+}
+
+
+.global-tradebook-pagination button.active {
+  border-color: transparent;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00c79a,
+      #27bbed
+    );
+
+  color: #001b1d;
+
+  font-weight: 700;
+}
+
+
+.global-tradebook-dots {
+  padding: 0 5px;
+
+  color: #657984;
+
+  font-size: 8px;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+.global-tradebook-table-wrap::-webkit-scrollbar {
+  height: 5px;
+}
+
+
+.global-tradebook-table-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.global-tradebook-table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: rgba(0, 190, 145, 0.22);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 767px) {
+
+  .global-tradebook-page {
+    padding: 12px;
+  }
+
+
+  .global-tradebook-footer {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .global-tradebook-pagination {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------RESIZE IT------------------------------- */
+
+
+
+.global-tradebook-page {
+  padding: 22px;
+}
+
+
+/* ================= HEADING ================= */
+
+.global-tradebook-heading {
+  margin-bottom: 20px;
+}
+
+.global-tradebook-heading-icon {
+  width: 46px;
+  height: 46px;
+
+  font-size: 18px;
+}
+
+.global-tradebook-heading h2 {
+  font-size: 24px;
+}
+
+.global-tradebook-heading p {
+  font-size: 11px;
+}
+
+
+/* ================= SUMMARY CARDS ================= */
+
+.global-tradebook-stat-card {
+  min-height: 96px;
+
+  padding: 15px;
+
+  border-radius: 10px;
+}
+
+.global-tradebook-stat-title span {
+  font-size: 10px;
+}
+
+.global-tradebook-stat-title i {
+  font-size: 13px;
+}
+
+.global-tradebook-stat-card h3 {
+  margin: 10px 0 3px;
+
+  font-size: 22px;
+}
+
+.global-tradebook-stat-card small {
+  font-size: 9px;
+}
+
+
+/* ================= MAIN CARD ================= */
+
+.global-tradebook-card-header {
+  min-height: 64px;
+
+  padding: 12px 18px;
+}
+
+.global-tradebook-card-header h4 {
+  font-size: 14px;
+}
+
+.global-tradebook-card-header p {
+  font-size: 9px;
+}
+
+.global-tradebook-updated {
+  font-size: 10px;
+}
+
+.global-updated-dot {
+  width: 8px;
+  height: 8px;
+}
+
+
+/* ================= TABLE ================= */
+
+.global-tradebook-table {
+  min-width: 1120px;
+}
+
+.global-tradebook-table th {
+  height: 48px;
+
+  padding: 0 16px;
+
+  font-size: 9px;
+}
+
+.global-tradebook-table td {
+  height: 54px;
+
+  padding: 0 16px;
+
+  font-size: 10px;
+}
+
+
+/* ================= SL NO ================= */
+
+.global-tradebook-slno {
+  min-width: 24px;
+  height: 24px;
+
+  font-size: 9px;
+}
+
+
+/* ================= CLIENT ================= */
+
+.global-tradebook-client strong {
+  font-size: 10px;
+}
+
+.global-tradebook-client span {
+  margin-top: 4px;
+
+  padding: 3px 7px;
+
+  font-size: 7px;
+}
+
+
+/* ================= BROKER ================= */
+
+.global-tradebook-broker {
+  padding: 4px 6px;
+
+  font-size: 8px;
+}
+
+
+/* ================= SYMBOL / SIDE / VALUE ================= */
+
+.global-tradebook-symbol,
+.global-tradebook-buy,
+.global-tradebook-sell,
+.global-tradebook-value {
+  font-size: 10px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.global-tradebook-footer {
+  min-height: 56px;
+
+  padding: 10px 16px;
+}
+
+.global-tradebook-result-text {
+  font-size: 10px;
+}
+
+
+/* ================= PAGINATION ================= */
+
+.global-tradebook-pagination button {
+  min-width: 30px;
+  height: 30px;
+
+  font-size: 9px;
+}
+
+.global-tradebook-dots {
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

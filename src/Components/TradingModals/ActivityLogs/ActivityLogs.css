@@ -1,0 +1,574 @@
+.activity-logs-overlay {
+  position: fixed;
+  inset: 0;
+
+  z-index: 6000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px;
+
+  background: rgba(0, 7, 13, 0.76);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+.activity-logs-modal {
+  width: min(1180px, 98vw);
+
+  max-height: 92vh;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid rgba(120, 205, 195, 0.24);
+
+  border-radius: 11px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(5, 24, 33, 0.99),
+      rgba(2, 14, 23, 0.99)
+    );
+
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+
+/* ================= HEADER ================= */
+
+.activity-logs-header {
+  min-height: 66px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 14px;
+
+  flex-shrink: 0;
+
+  border-top: 3px solid #00b987;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: rgba(0, 70, 60, 0.08);
+}
+
+
+.activity-logs-title-wrap {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.activity-logs-title-icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: rgba(0, 210, 155, 0.1);
+
+  border: 1px solid rgba(0, 218, 160, 0.14);
+
+  color: #00d9a0;
+
+  font-size: 13px;
+}
+
+
+.activity-logs-title-wrap h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.activity-logs-title-wrap p {
+  margin: 3px 0 0;
+
+  color: #7d929c;
+
+  font-size: 8px;
+}
+
+
+.activity-logs-close-btn {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #83969f;
+
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+
+.activity-logs-close-btn:hover {
+  color: #ffffff;
+}
+
+
+/* ================= FILTER ================= */
+
+.activity-logs-filter-section {
+  padding: 14px;
+
+  flex-shrink: 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+
+  background: rgba(255, 255, 255, 0.012);
+}
+
+
+.activity-logs-filter-grid {
+  display: grid;
+
+  grid-template-columns:
+    minmax(150px, 0.9fr)
+    minmax(150px, 0.9fr)
+    minmax(260px, 1.3fr)
+    auto;
+
+  align-items: end;
+
+  gap: 8px;
+}
+
+
+.activity-filter-field label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #91a4ad;
+
+  font-size: 8px;
+}
+
+
+.activity-filter-field select,
+.activity-search-box {
+  width: 100%;
+  height: 38px;
+
+  border: 1px solid rgba(130, 185, 190, 0.19);
+
+  border-radius: 6px;
+
+  background: rgba(2, 16, 24, 0.7);
+}
+
+
+.activity-filter-field select {
+  padding: 0 10px;
+
+  outline: none;
+
+  color: #d8e3e6;
+
+  font-size: 9px;
+}
+
+
+.activity-filter-field select option {
+  color: #ffffff;
+
+  background: #071923;
+}
+
+
+/* SEARCH */
+
+.activity-search-box {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 11px;
+}
+
+
+.activity-search-box i {
+  color: #70858e;
+
+  font-size: 9px;
+}
+
+
+.activity-search-box input {
+  flex: 1;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 9px;
+}
+
+
+.activity-search-box input::placeholder {
+  color: #657a84;
+}
+
+
+/* CLEAR */
+
+.activity-clear-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.activity-clear-btn {
+  height: 38px;
+
+  padding: 0 13px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  border: 1px solid rgba(130, 185, 190, 0.2);
+
+  border-radius: 6px;
+
+  background: rgba(255, 255, 255, 0.02);
+
+  color: #a1b0b7;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.activity-clear-btn:hover {
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+/* ================= TABLE ================= */
+
+.activity-logs-table-area {
+  min-height: 0;
+
+  flex: 1;
+
+  padding: 8px 14px 14px;
+}
+
+
+.activity-logs-table-wrap {
+  width: 100%;
+  height: 100%;
+
+  max-height: 590px;
+
+  overflow: auto;
+
+  border: 1px solid rgba(120, 185, 185, 0.1);
+
+  border-radius: 8px;
+}
+
+
+.activity-logs-table {
+  width: 100%;
+
+  min-width: 1750px;
+
+  border-collapse: collapse;
+
+  background: rgba(2, 17, 25, 0.28);
+}
+
+
+.activity-logs-table thead {
+  position: sticky;
+  top: 0;
+
+  z-index: 2;
+
+  background: rgba(0, 96, 80, 0.98);
+}
+
+
+.activity-logs-table th {
+  height: 34px;
+
+  padding: 0 9px;
+
+  color: #e0ebeb;
+
+  font-size: 7px;
+  font-weight: 600;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.activity-logs-table td {
+  height: 51px;
+
+  padding: 0 9px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.045);
+
+  color: #cbd7dc;
+
+  font-size: 7.5px;
+
+  white-space: nowrap;
+}
+
+
+.activity-logs-table tbody tr:hover {
+  background: rgba(0, 210, 155, 0.025);
+}
+
+
+/* ================= SL ================= */
+
+.activity-log-slno {
+  width: 23px;
+  height: 23px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: rgba(0, 210, 155, 0.1);
+
+  color: #00d99e;
+
+  font-weight: 700;
+}
+
+
+/* ================= CLIENT ================= */
+
+.activity-log-client strong {
+  display: block;
+
+  color: #bfd0d5;
+
+  font-size: 8px;
+  font-weight: 500;
+}
+
+
+.activity-log-client span {
+  display: inline-flex;
+
+  margin-top: 4px;
+
+  padding: 3px 7px;
+
+  border-radius: 20px;
+
+  background: #00a979;
+
+  color: #ffffff;
+
+  font-size: 6px;
+  font-weight: 600;
+}
+
+
+.activity-order-id {
+  color: #86bdb2 !important;
+}
+
+
+.activity-symbol {
+  color: #ffffff !important;
+
+  font-weight: 600;
+}
+
+
+/* ================= ACTION ================= */
+
+.activity-action-badge {
+  color: #cbd8dc;
+
+  font-weight: 600;
+}
+
+
+/* ================= BUY / SELL ================= */
+
+.activity-buy {
+  color: #00d99e !important;
+
+  font-weight: 700;
+}
+
+
+.activity-sell {
+  color: #ff5e69 !important;
+
+  font-weight: 700;
+}
+
+
+/* ================= STATUS ================= */
+
+.activity-status {
+  display: inline-flex;
+
+  padding: 4px 7px;
+
+  border-radius: 20px;
+
+  font-size: 6px;
+  font-weight: 600;
+}
+
+
+.activity-status.success {
+  background: rgba(0, 215, 155, 0.09);
+
+  color: #00d99e;
+}
+
+
+.activity-status.pending,
+.activity-status.trigger-pending {
+  background: rgba(255, 184, 70, 0.1);
+
+  color: #f8b94f;
+}
+
+
+.activity-status.cancelled {
+  background: rgba(150, 165, 175, 0.09);
+
+  color: #a5b2b8;
+}
+
+
+.activity-status.failed {
+  background: rgba(255, 75, 90, 0.09);
+
+  color: #ff616d;
+}
+
+
+.activity-reason {
+  color: #82959e !important;
+}
+
+
+/* EMPTY */
+
+.activity-no-data {
+  height: 130px !important;
+
+  text-align: center !important;
+
+  color: #70848d !important;
+}
+
+
+/* ================= SCROLLBAR ================= */
+
+.activity-logs-table-wrap::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+
+.activity-logs-table-wrap::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+
+.activity-logs-table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: rgba(0, 190, 145, 0.28);
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 850px) {
+
+  .activity-logs-overlay {
+    padding: 8px;
+  }
+
+
+  .activity-logs-modal {
+    width: 100%;
+  }
+
+
+  .activity-logs-filter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .activity-filter-field.search {
+    grid-column: 1 / -1;
+  }
+
+
+  .activity-clear-wrap {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .activity-logs-filter-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .activity-filter-field.search,
+  .activity-clear-wrap {
+    grid-column: auto;
+  }
+
+}

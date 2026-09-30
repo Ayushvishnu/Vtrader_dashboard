@@ -1,0 +1,527 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.running-pnl-page {
+  min-height: calc(100vh - 68px);
+
+  padding: 24px 22px 36px;
+
+  color: #ffffff;
+
+  background: transparent;
+}
+
+
+/* =====================================================
+   PAGE HEADER
+===================================================== */
+
+.running-pnl-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.running-pnl-heading-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(0, 217, 160, 0.22);
+
+  border-radius: 10px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+
+  font-size: 17px;
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255,255,255,.04);
+}
+
+
+.running-pnl-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+.running-pnl-heading p {
+  margin: 4px 0 0;
+
+  color: #7d919a;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   MAIN CARD
+===================================================== */
+
+.running-pnl-card {
+  overflow: hidden;
+
+  margin-bottom: 18px;
+
+  border:
+    1px solid
+    rgba(145, 200, 205, 0.19);
+
+  border-radius: 12px;
+
+  background:
+    rgba(3, 18, 28, 0.16);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+      rgba(255,255,255,.03),
+    0 8px 28px
+      rgba(0,0,0,.08);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.running-pnl-card-header {
+  min-height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px 16px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.055);
+}
+
+
+.running-pnl-card-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.running-pnl-card-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   CARD BODY
+===================================================== */
+
+.running-pnl-card-body {
+  padding: 14px;
+}
+
+
+/* =====================================================
+   CHART BOX
+===================================================== */
+
+.running-pnl-chart-box {
+  width: 100%;
+  height: 100%;
+
+  min-height: 320px;
+
+  padding:
+    15px
+    12px
+    5px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.37);
+}
+
+
+/* =====================================================
+   CLIENT PANEL
+===================================================== */
+
+.running-pnl-client-panel {
+  min-height: 320px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 13px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 9px;
+
+  background:
+    rgba(2, 15, 23, 0.32);
+}
+
+
+.running-pnl-client-panel > label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9babb2;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.running-pnl-client-panel select {
+  width: 100%;
+  height: 42px;
+
+  padding:
+    0
+    34px
+    0
+    12px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.2);
+
+  border-radius: 8px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.64);
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.running-pnl-client-panel select:hover {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+}
+
+
+.running-pnl-client-panel select:focus {
+  border-color:
+    rgba(0, 217, 160, 0.45);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.04);
+}
+
+
+.running-pnl-client-panel
+select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   CLIENT BUTTON GRID
+===================================================== */
+
+.running-pnl-client-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 7px;
+
+  margin-top: 9px;
+}
+
+
+.running-pnl-client-grid button {
+  height: 35px;
+
+  border:
+    1px solid
+    rgba(135, 180, 185, 0.16);
+
+  border-radius: 7px;
+
+  background:
+    rgba(3, 17, 26, 0.48);
+
+  color: #9aabb2;
+
+  font-size: 8px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    background .2s ease,
+    border-color .2s ease,
+    color .2s ease,
+    transform .2s ease;
+}
+
+
+.running-pnl-client-grid button:hover {
+  color: #ffffff;
+
+  border-color:
+    rgba(0, 217, 160, 0.25);
+
+  background:
+    rgba(0, 217, 160, 0.045);
+}
+
+
+.running-pnl-client-grid button.active {
+  border-color:
+    rgba(0, 217, 160, 0.4);
+
+  background:
+    linear-gradient(
+      90deg,
+      #00bd7f,
+      #00966b
+    );
+
+  color: #ffffff;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0, 180, 125, 0.13);
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.running-pnl-summary {
+  margin-top: auto;
+
+  padding: 11px 12px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.1);
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(0, 217, 160, 0.08),
+      rgba(0, 120, 90, 0.045)
+    );
+}
+
+
+.running-pnl-summary > div {
+  min-height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+
+.running-pnl-summary span {
+  color: #8a9ea6;
+
+  font-size: 9px;
+}
+
+
+.running-pnl-summary strong {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+
+.running-pnl-summary strong.positive {
+  color: #00e09d;
+}
+
+
+.running-pnl-summary strong.negative {
+  color: #ff5965;
+}
+
+
+/* TOTAL */
+
+.running-pnl-summary .total {
+  margin-top: 3px;
+
+  padding-top: 5px;
+
+  border-top:
+    1px solid
+    rgba(0, 217, 160, 0.09);
+}
+
+
+.running-pnl-summary .total span {
+  color: #d1dee1;
+
+  font-weight: 600;
+}
+
+
+.running-pnl-summary .total strong {
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   AUM SUMMARY
+===================================================== */
+
+.running-pnl-summary.aum-summary
+> div {
+  min-height: 34px;
+}
+
+
+.running-pnl-summary.aum-summary
+strong {
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   RECHARTS TOOLTIP FIX
+===================================================== */
+
+.running-pnl-page
+.recharts-default-tooltip {
+  background:
+    #061923 !important;
+
+  border:
+    1px solid
+    rgba(0,217,160,.2)
+    !important;
+
+  border-radius:
+    8px !important;
+}
+
+
+.running-pnl-page
+.recharts-tooltip-label {
+  color:
+    #ffffff !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1199px) {
+
+  .running-pnl-client-panel {
+    min-height: 280px;
+  }
+
+
+  .running-pnl-chart-box {
+    min-height: 315px;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .running-pnl-page {
+    padding:
+      14px
+      12px
+      25px;
+  }
+
+
+  .running-pnl-heading-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 14px;
+  }
+
+
+  .running-pnl-heading h2 {
+    font-size: 21px;
+  }
+
+
+  .running-pnl-heading p {
+    font-size: 9px;
+  }
+
+
+  .running-pnl-card-body {
+    padding: 10px;
+  }
+
+
+  .running-pnl-client-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}

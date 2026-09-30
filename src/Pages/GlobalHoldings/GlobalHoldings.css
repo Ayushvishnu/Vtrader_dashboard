@@ -1,0 +1,992 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.global-holdings-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 21px;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.global-holdings-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  padding-bottom: 14px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+.global-holdings-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.global-holdings-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.global-holdings-heading h2 span {
+  color: #00d9a0;
+}
+
+
+.global-holdings-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   SUMMARY
+===================================================== */
+
+.global-holdings-summary-row {
+  margin-bottom: 18px;
+}
+
+
+.global-holdings-summary-card {
+  min-height: 100px;
+
+  padding: 15px 16px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.4);
+
+  backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 8px 24px
+    rgba(0, 0, 0, 0.11);
+}
+
+
+.global-holdings-summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.global-holdings-summary-top span {
+  color: #a3b4ba;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.global-holdings-summary-top i {
+  font-size: 14px;
+}
+
+
+.global-holdings-summary-card > strong {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 22px;
+}
+
+
+.global-holdings-summary-card > small {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* BROKER */
+
+.global-holdings-summary-card.broker {
+  border-color:
+    rgba(145, 105, 255, 0.28);
+}
+
+.global-holdings-summary-card.broker strong,
+.global-holdings-summary-card.broker i {
+  color: #9c7cff;
+}
+
+
+/* SUCCESS */
+
+.global-holdings-summary-card.success {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+}
+
+.global-holdings-summary-card.success strong,
+.global-holdings-summary-card.success i {
+  color: #00d9a0;
+}
+
+
+/* FAILED */
+
+.global-holdings-summary-card.failed {
+  border-color:
+    rgba(255, 89, 101, 0.27);
+}
+
+.global-holdings-summary-card.failed strong,
+.global-holdings-summary-card.failed i {
+  color: #ff5965;
+}
+
+
+/* NOT LOGGED */
+
+.global-holdings-summary-card.notlogged {
+  border-color:
+    rgba(255, 170, 70, 0.27);
+}
+
+.global-holdings-summary-card.notlogged strong,
+.global-holdings-summary-card.notlogged i {
+  color: #ffae49;
+}
+
+
+/* =====================================================
+   HOLDINGS CARD
+===================================================== */
+
+.global-holdings-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+}
+
+
+.global-holdings-card-header {
+  padding: 15px 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.global-holdings-card-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.global-holdings-card-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.global-holdings-table-wrap {
+ width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+.global-holdings-table {
+  width: 100%;
+
+  min-width: 1350px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.global-holdings-table th {
+  height: 42px;
+
+  padding:
+    10px
+    13px;
+
+  background:
+  rgba(5,41,50,1);
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.global-holdings-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.global-holdings-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+
+.global-holdings-table td {
+  height: 51px;
+
+  padding:
+    9px
+    13px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(3, 18, 28, 0.28);
+
+  color: #b8c8cd;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+}
+
+
+.global-holdings-table
+tbody tr:nth-child(even) td {
+  background:
+    rgba(6, 25, 35, 0.34);
+}
+
+
+.global-holdings-table
+tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   SL
+===================================================== */
+
+.global-holdings-sl {
+  width: 26px;
+  height: 26px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   CLIENT
+===================================================== */
+
+.global-holdings-client {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.global-holdings-client strong {
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.global-holdings-client span {
+  margin-top: 2px;
+
+  color: #00d9a0;
+
+  font-size: 7px;
+}
+
+
+/* =====================================================
+   SYMBOL
+===================================================== */
+
+.global-holdings-symbol {
+  color: #00d9a0 !important;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   EXCHANGE
+===================================================== */
+
+.global-holdings-exchange {
+  display: inline-flex;
+
+  padding:
+    4px
+    7px;
+
+  border:
+    1px solid
+    rgba(70, 145, 255, 0.17);
+
+  border-radius: 5px;
+
+  background:
+    rgba(70, 145, 255, 0.08);
+
+  color: #6ea9ff;
+
+  font-size: 8px;
+}
+
+
+/* =====================================================
+   P&L
+===================================================== */
+
+.global-holdings-profit {
+  color: #00d9a0;
+
+  font-weight: 700;
+}
+
+
+.global-holdings-loss {
+  color: #ff5965;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.global-holdings-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.global-holdings-actions button {
+  width: 29px;
+  height: 29px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.58);
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+
+/* VIEW */
+
+.global-holdings-view-btn {
+  border:
+    1px solid
+    rgba(70, 145, 255, 0.25);
+
+  color: #6ea9ff;
+}
+
+
+.global-holdings-view-btn:hover {
+  background:
+    rgba(70, 145, 255, 0.1);
+}
+
+
+/* EDIT */
+
+.global-holdings-edit-btn {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.24);
+
+  color: #00d9a0;
+}
+
+
+.global-holdings-edit-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.09);
+}
+
+
+/* DELETE */
+
+.global-holdings-delete-btn {
+  border:
+    1px solid
+    rgba(255, 89, 101, 0.26);
+
+  color: #ff5965;
+}
+
+
+.global-holdings-delete-btn:hover {
+  background:
+    rgba(255, 89, 101, 0.09);
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.global-holdings-empty {
+  height: 100px !important;
+
+  color: #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.global-holdings-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding:
+    12px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.global-holdings-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3, 18, 28, 0.5);
+
+  color: #81969e;
+
+  cursor: pointer;
+}
+
+
+.global-holdings-pagination button:hover:not(:disabled) {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+
+  color: #00d9a0;
+}
+
+
+.global-holdings-pagination button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.global-holdings-pagination span {
+  min-width: 58px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.45);
+
+  color: #d5e1e4;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.global-holdings-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0, 0, 0, 0.68);
+
+  backdrop-filter: blur(5px);
+}
+
+
+.global-holdings-view-modal,
+.global-holdings-edit-modal {
+  width:
+    min(
+      470px,
+      95vw
+    );
+
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.18);
+
+  border-radius: 11px;
+
+  background: #061923;
+
+  color: #dce7ea;
+
+  box-shadow:
+    0 22px 58px
+    rgba(0, 0, 0, 0.5);
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.global-holdings-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 217, 160, 0.08),
+      rgba(3, 18, 28, 0.95)
+    );
+}
+
+
+.global-holdings-modal-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+}
+
+
+.global-holdings-modal-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+.global-holdings-modal-close {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background:
+    rgba(255, 255, 255, 0.03);
+
+  color: #83969e;
+
+  cursor: pointer;
+}
+
+
+.global-holdings-modal-close:hover {
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   VIEW STOCK
+===================================================== */
+
+.global-holdings-view-stock {
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  margin: 16px 16px 0;
+
+  padding: 12px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.16);
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 160, 0.06);
+}
+
+
+.global-holdings-view-stock-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+.global-holdings-view-stock span {
+  color: #71868f;
+
+  font-size: 8px;
+}
+
+
+.global-holdings-view-stock h4 {
+  margin: 3px 0 0;
+
+  color: #ffffff;
+
+  font-size: 13px;
+}
+
+
+/* =====================================================
+   MODAL BODY
+===================================================== */
+
+.global-holdings-modal-body {
+  padding: 17px;
+}
+
+
+.global-holdings-detail-row {
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.global-holdings-detail-row span {
+  color: #71868f;
+
+  font-size: 9px;
+}
+
+
+.global-holdings-detail-row strong {
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.global-holdings-detail-row strong.profit {
+  color: #00d9a0;
+}
+
+
+.global-holdings-detail-row strong.loss {
+  color: #ff5965;
+}
+
+
+/* =====================================================
+   EDIT FIELD
+===================================================== */
+
+.global-holdings-field label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #9aabb2;
+
+  font-size: 10px;
+}
+
+
+.global-holdings-field input {
+  width: 100%;
+  height: 39px;
+
+  padding: 0 11px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.global-holdings-field input:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   MODAL FOOTER
+===================================================== */
+
+.global-holdings-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding:
+    13px
+    17px;
+
+  border-top:
+    1px solid
+    rgba(255, 255, 255, 0.06);
+}
+
+
+.global-holdings-modal-cancel,
+.global-holdings-modal-save {
+  min-width: 85px;
+  height: 36px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+
+  cursor: pointer;
+}
+
+
+.global-holdings-modal-cancel {
+  border:
+    1px solid
+    rgba(145, 180, 185, 0.18);
+
+  background:
+    rgba(3, 18, 28, 0.55);
+
+  color: #9aabb2;
+}
+
+
+.global-holdings-modal-save {
+  border:
+    1px solid
+    #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .global-holdings-page {
+    padding: 12px;
+  }
+
+}

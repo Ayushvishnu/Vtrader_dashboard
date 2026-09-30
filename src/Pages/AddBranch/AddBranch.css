@@ -1,0 +1,1108 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.addbranch-page {
+  width: 100%;
+  min-height: 100%;
+
+  padding: 21px;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   PAGE HEADING
+===================================================== */
+
+.addbranch-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+}
+
+
+.addbranch-heading-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.2);
+
+  border-radius: 9px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.addbranch-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.addbranch-heading h2 span {
+  color: #00d9a0;
+}
+
+
+.addbranch-heading p {
+  margin: 3px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.addbranch-card {
+  width: 100%;
+
+  margin-bottom: 17px;
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 11px;
+
+  background:
+    rgba(3, 18, 28, 0.36);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255, 255, 255, 0.025),
+    0 10px 28px
+    rgba(0, 0, 0, 0.1);
+}
+
+
+/* =====================================================
+   CARD HEADER
+===================================================== */
+
+.addbranch-card-header {
+  padding: 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+
+  background:
+    rgba(0, 45, 45, 0.06);
+}
+
+
+.addbranch-card-header h3,
+.addbranch-list-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.addbranch-card-header p,
+.addbranch-list-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+.addbranch-card-body {
+  padding: 20px 17px;
+}
+
+
+/* =====================================================
+   FIELD
+===================================================== */
+
+.addbranch-field {
+  width: 100%;
+}
+
+
+.addbranch-field label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #9aabb2;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.addbranch-field label span {
+  margin-left: 2px;
+
+  color: #ff5965;
+}
+
+
+.addbranch-field input {
+  width: 100%;
+  height: 41px;
+
+  padding: 0 12px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.62);
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+
+  transition: 0.2s ease;
+}
+
+
+.addbranch-field input::placeholder {
+  color: #617781;
+}
+
+
+.addbranch-field input:focus {
+  border-color:
+    #00b985;
+
+  background:
+    rgba(2, 15, 23, 0.78);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   ADD BUTTON
+===================================================== */
+
+.addbranch-primary-btn {
+  width: 100%;
+  height: 41px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  padding: 0 15px;
+
+  border:
+    1px solid
+    #00be67;
+
+  border-radius: 6px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.addbranch-primary-btn:hover {
+  filter: brightness(1.08);
+}
+
+
+/* =====================================================
+   LIST HEADER
+===================================================== */
+
+.addbranch-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 15px 17px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.addbranch-header-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* =====================================================
+   SEARCH
+===================================================== */
+
+.addbranch-search {
+  position: relative;
+
+  width: 240px;
+}
+
+
+.addbranch-search i {
+  position: absolute;
+
+  top: 50%;
+  left: 11px;
+
+  transform:
+    translateY(-50%);
+
+  color: #71868f;
+
+  font-size: 10px;
+
+  pointer-events: none;
+}
+
+
+.addbranch-search input {
+  width: 100%;
+  height: 36px;
+
+  padding:
+    0
+    11px
+    0
+    33px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.6);
+
+  color: #ffffff;
+
+  font-size: 10px;
+}
+
+
+.addbranch-search input::placeholder {
+  color: #617781;
+}
+
+
+.addbranch-search input:focus {
+  border-color:
+    #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+/* =====================================================
+   COUNT
+===================================================== */
+
+.addbranch-count {
+  padding:
+    7px
+    13px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.13);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TABLE WRAPPER
+===================================================== */
+
+.addbranch-table-wrap {
+  width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+
+  scrollbar-width: thin;
+
+  scrollbar-color:
+    rgba(0, 217, 160, 0.3)
+    transparent;
+}
+
+
+.addbranch-table-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+
+.addbranch-table-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.addbranch-table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+
+  background:
+    rgba(0, 217, 160, 0.25);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.addbranch-table {
+  width: 100%;
+
+  min-width: 820px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+
+  background: transparent;
+}
+
+
+.addbranch-table th {
+  height: 41px;
+
+  padding:
+    10px
+    14px;
+
+  border: 0;
+
+   background:rgba(5,41,50,1) !important;
+
+
+  color: #ffffff;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 0.7px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.addbranch-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.addbranch-table th:last-child {
+  border-top-right-radius: 8px;
+
+  text-align: center;
+}
+
+
+.addbranch-table td {
+  height: 48px;
+
+  padding:
+    9px
+    14px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.055);
+
+  background:
+    rgba(3,18,28,.28);
+
+  color:
+    #b8c8cd;
+
+  font-size: 10px;
+
+  vertical-align: middle;
+}
+
+
+.addbranch-table tbody tr:nth-child(even) td {
+  background:
+    rgba(6,25,35,.34);
+}
+
+
+.addbranch-table tbody tr:hover td {
+  background:
+    rgba(0,217,160,.05);
+}
+
+
+/* =====================================================
+   SL NO.
+===================================================== */
+
+.addbranch-slno {
+  width: 26px;
+  height: 26px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(0,217,160,.14);
+
+  border-radius: 7px;
+
+  background:
+    rgba(0,217,160,.08);
+
+  color:
+    #00d9a0;
+
+  font-size: 9px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   BRANCH NAME
+===================================================== */
+
+.addbranch-name {
+  color:
+    #00d9a0 !important;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.addbranch-status {
+  min-width: 62px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    5px
+    9px;
+
+  border-radius: 15px;
+
+  font-size: 7px;
+  font-weight: 700;
+
+  text-transform: uppercase;
+}
+
+
+.addbranch-status.active {
+  border:
+    1px solid
+    rgba(0,217,160,.15);
+
+  background:
+    rgba(0,217,160,.08);
+
+  color:
+    #00d9a0;
+}
+
+
+.addbranch-status.inactive {
+  border:
+    1px solid
+    rgba(255,89,101,.2);
+
+  background:
+    rgba(255,89,101,.08);
+
+  color:
+    #ff5965;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.addbranch-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+}
+
+
+.addbranch-actions button {
+  height: 29px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  padding:
+    0
+    9px;
+
+  border-radius: 6px;
+
+  background:
+    rgba(2,15,23,.55);
+
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* EDIT */
+
+.addbranch-edit-btn {
+  border:
+    1px solid
+    rgba(0,217,160,.24);
+
+  color:
+    #00d9a0;
+}
+
+
+.addbranch-edit-btn:hover {
+  background:
+    rgba(0,217,160,.09);
+}
+
+
+/* DELETE */
+
+.addbranch-delete-btn {
+  border:
+    1px solid
+    rgba(255,89,101,.26);
+
+  color:
+    #ff5965;
+}
+
+
+.addbranch-delete-btn:hover {
+  background:
+    rgba(255,89,101,.09);
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.addbranch-empty {
+  height: 100px;
+
+  color:
+    #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.addbranch-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 7px;
+
+  padding:
+    12px
+    16px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.055);
+
+  background:
+    rgba(0,20,29,.18);
+}
+
+
+.addbranch-pagination button {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135,185,190,.17);
+
+  border-radius: 6px;
+
+  background:
+    rgba(3,18,28,.5);
+
+  color:
+    #81969e;
+
+  font-size: 8px;
+
+  cursor: pointer;
+}
+
+
+.addbranch-pagination button:hover:not(:disabled) {
+  border-color:
+    rgba(0,217,160,.28);
+
+  background:
+    rgba(0,217,160,.06);
+
+  color:
+    #00d9a0;
+}
+
+
+.addbranch-pagination button:disabled {
+  opacity: 0.35;
+
+  cursor: not-allowed;
+}
+
+
+.addbranch-pagination span {
+  min-width: 58px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(135,185,190,.15);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2,15,23,.45);
+
+  color:
+    #d5e1e4;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.addbranch-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0,0,0,.68);
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* =====================================================
+   EDIT MODAL
+===================================================== */
+
+.addbranch-edit-modal {
+  width: min(
+    465px,
+    95vw
+  );
+
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(0,217,160,.18);
+
+  border-radius: 11px;
+
+  background:
+    #061923;
+
+  color:
+    #dce7ea;
+
+  box-shadow:
+    0 22px 58px
+    rgba(0,0,0,.5);
+}
+
+
+/* =====================================================
+   MODAL HEADER
+===================================================== */
+
+.addbranch-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding:
+    16px
+    17px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.06);
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,217,160,.08),
+      rgba(3,18,28,.95)
+    );
+}
+
+
+.addbranch-modal-header h3 {
+  margin: 0;
+
+  color:
+    #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.addbranch-modal-header p {
+  margin:
+    4px
+    0
+    0;
+
+  color:
+    #71868f;
+
+  font-size: 9px;
+}
+
+
+.addbranch-modal-close {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background:
+    rgba(255,255,255,.03);
+
+  color:
+    #83969e;
+
+  cursor: pointer;
+}
+
+
+.addbranch-modal-close:hover {
+  background:
+    rgba(255,89,101,.08);
+
+  color:
+    #ff5965;
+}
+
+
+/* =====================================================
+   MODAL BODY
+===================================================== */
+
+.addbranch-modal-body {
+  padding: 18px;
+}
+
+
+.addbranch-edit-location {
+  margin-top: 15px;
+}
+
+
+/* =====================================================
+   MODAL FOOTER
+===================================================== */
+
+.addbranch-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+
+  gap: 8px;
+
+  padding:
+    13px
+    18px;
+
+  border-top:
+    1px solid
+    rgba(255,255,255,.06);
+
+  background:
+    rgba(2,15,23,.78);
+}
+
+
+.addbranch-modal-cancel,
+.addbranch-modal-save {
+  height: 36px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  padding:
+    0
+    13px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.addbranch-modal-cancel {
+  border:
+    1px solid
+    rgba(145,180,185,.18);
+
+  background:
+    rgba(3,18,28,.55);
+
+  color:
+    #9aabb2;
+}
+
+
+.addbranch-modal-cancel:hover {
+  background:
+    rgba(0,217,160,.05);
+
+  color:
+    #ffffff;
+}
+
+
+.addbranch-modal-save {
+  border:
+    1px solid
+    #00be67;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color:
+    #ffffff;
+}
+
+
+.addbranch-modal-save:hover {
+  filter:
+    brightness(1.08);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .addbranch-page {
+    padding: 12px;
+  }
+
+
+  .addbranch-list-header {
+    align-items:
+      flex-start;
+
+    flex-direction:
+      column;
+  }
+
+
+  .addbranch-header-actions {
+    width: 100%;
+  }
+
+
+  .addbranch-search {
+    flex: 1;
+
+    width: auto;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .addbranch-heading h2 {
+    font-size: 20px;
+  }
+
+
+  .addbranch-card-body {
+    padding: 15px;
+  }
+
+
+  .addbranch-header-actions {
+    align-items:
+      stretch;
+
+    flex-direction:
+      column;
+  }
+
+
+  .addbranch-search {
+    width: 100%;
+  }
+
+
+  .addbranch-count {
+    width:
+      fit-content;
+  }
+
+
+  .addbranch-primary-btn {
+    width: 100%;
+  }
+
+}

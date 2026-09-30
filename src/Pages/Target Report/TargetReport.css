@@ -1,0 +1,818 @@
+/* =====================================================
+   PERIOD TABS
+===================================================== */
+
+.target-report-period-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 28px;
+
+  margin-bottom: 10px;
+
+  padding: 0 4px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+.target-report-period-tabs button {
+  position: relative;
+
+  min-width: 90px;
+
+  padding: 10px 12px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #7d919a;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.target-report-period-tabs button:hover {
+  color: #ffffff;
+}
+
+
+.target-report-period-tabs button.active {
+  color: #00d99a;
+}
+
+
+.target-report-period-tabs button.active::after {
+  position: absolute;
+
+  right: 0;
+  bottom: -1px;
+  left: 0;
+
+  height: 2px;
+
+  border-radius: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  content: "";
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.target-report-page {
+  min-height: 100%;
+
+  padding: 21px;
+
+  background: transparent;
+
+  color: #dce7ea;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.target-report-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+
+  padding: 5px 0 14px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+.target-report-heading {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.target-report-heading-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  width: 38px;
+  height: 38px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.22);
+
+  border-radius: 8px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.target-report-heading h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 23px;
+  font-weight: 700;
+}
+
+
+.target-report-heading h2 span {
+  color: #00d9a0;
+}
+
+
+.target-report-heading p {
+  margin: 3px 0 0;
+
+  color: #748991;
+
+  font-size: 11px;
+}
+
+
+/* PREVIEW BADGE */
+
+.target-report-preview {
+  padding: 6px 9px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 6px;
+
+  background:
+    rgba(0, 217, 160, 0.06);
+
+  color: #79c9b0;
+
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   ERROR
+===================================================== */
+
+.target-report-error {
+  margin-bottom: 14px;
+
+  padding: 10px 12px;
+
+  border:
+    1px solid
+    rgba(255, 89, 101, 0.28);
+
+  border-radius: 7px;
+
+  background:
+    rgba(255, 89, 101, 0.07);
+
+  color: #ff7b85;
+
+  font-size: 12px;
+}
+
+
+/* =====================================================
+   TOOLBAR
+===================================================== */
+
+.target-report-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-bottom: 18px;
+
+  border-bottom:
+    1px solid
+    rgba(120, 190, 185, 0.12);
+}
+
+
+/* =====================================================
+   EQUITY / OPTION TABS
+===================================================== */
+
+.target-report-tabs {
+  display: flex;
+
+  gap: 4px;
+}
+
+
+.target-report-tabs button {
+  min-width: 90px;
+
+  padding: 10px 14px;
+
+  border: 0;
+
+  border-bottom:
+    3px solid transparent;
+
+  background: transparent;
+
+  color: #7d919a;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.target-report-tabs button:hover {
+  color: #ffffff;
+}
+
+
+.target-report-tabs button.active {
+  border-bottom-color: #00be67;
+
+  color: #00d99a;
+}
+
+
+/* =====================================================
+   FILTERS
+===================================================== */
+
+.target-report-filters {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  padding-bottom: 9px;
+}
+
+
+.target-report-filter {
+  min-width: 175px;
+}
+
+
+.target-report-filter label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #9aabb2;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+
+.target-report-filter select,
+.target-report-filter input {
+  width: 100%;
+
+  min-height: 38px;
+
+  padding: 7px 10px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 6px;
+
+  background:
+    rgba(2, 15, 23, 0.58);
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  outline: none;
+
+  transition: 0.2s ease;
+}
+
+
+.target-report-filter select:focus,
+.target-report-filter input:focus {
+  border-color: #00b985;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(0, 217, 160, 0.05);
+}
+
+
+.target-report-filter select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+
+.target-report-filter input::placeholder {
+  color: #627781;
+}
+
+
+/* =====================================================
+   SUMMARY ROW
+===================================================== */
+
+.target-report-summary-row {
+  margin-bottom: 18px;
+}
+
+
+.target-report-summary-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 100%;
+
+  min-height: 103px;
+
+  padding: 15px 16px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.14);
+
+  border-radius: 12px;
+
+  background:
+    rgba(3, 18, 28, 0.42);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255,255,255,.03),
+    0 8px 24px
+    rgba(0,0,0,.1);
+}
+
+
+.target-report-summary-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+
+.target-report-summary-top span {
+  color: #a5b6bc;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.target-report-summary-top i {
+  color: #00d9a0;
+
+  font-size: 15px;
+}
+
+
+.target-report-summary-card strong {
+  margin-top: 9px;
+
+  color: #00df9c;
+
+  font-size: 22px;
+
+  line-height: 1;
+}
+
+
+.target-report-summary-card small {
+  margin-top: 4px;
+
+  color: #71868f;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   SUMMARY VARIANTS
+===================================================== */
+
+.target-report-monthly {
+  border-color:
+    rgba(144, 102, 255, 0.3);
+
+  box-shadow:
+    0 0 0 1px rgba(144,102,255,.04),
+    0 8px 22px rgba(105,75,220,.12);
+}
+
+
+.target-report-monthly strong,
+.target-report-monthly i {
+  color: #9b7bff;
+}
+
+
+.target-report-achieved {
+  border-color:
+    rgba(0, 217, 160, 0.28);
+
+  box-shadow:
+    0 0 0 1px rgba(0,217,160,.04),
+    0 8px 22px rgba(0,180,125,.11);
+}
+
+
+.target-report-achieved strong,
+.target-report-achieved i {
+  color: #00df9c;
+}
+
+
+.target-report-daily {
+  border-color:
+    rgba(255, 170, 70, 0.28);
+
+  box-shadow:
+    0 0 0 1px rgba(255,170,70,.04),
+    0 8px 22px rgba(220,135,35,.1);
+}
+
+
+.target-report-daily strong,
+.target-report-daily i {
+  color: #ffae49;
+}
+
+
+.target-report-daily-achieved {
+  border-color:
+    rgba(70, 145, 255, 0.28);
+
+  box-shadow:
+    0 0 0 1px rgba(70,145,255,.04),
+    0 8px 22px rgba(60,115,220,.1);
+}
+
+
+.target-report-daily-achieved strong,
+.target-report-daily-achieved i {
+  color: #5c9dff;
+}
+
+
+/* =====================================================
+   PANEL
+===================================================== */
+
+.target-report-panel {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(135, 190, 190, 0.16);
+
+  border-radius: 10px;
+
+  background:
+    rgba(3, 18, 28, 0.34);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  box-shadow:
+    inset 0 1px 0
+    rgba(255,255,255,.025),
+    0 8px 25px
+    rgba(0,0,0,.08);
+}
+
+
+/* =====================================================
+   PANEL HEADER
+===================================================== */
+
+.target-report-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding: 15px 18px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.055);
+
+  background:
+    rgba(0, 45, 45, 0.08);
+}
+
+
+.target-report-panel-header h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.target-report-panel-header p {
+  margin: 4px 0 0;
+
+  color: #71868f;
+
+  font-size: 11px;
+}
+
+
+.target-report-count {
+  padding: 5px 10px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.13);
+
+  border-radius: 20px;
+
+  background:
+    rgba(0, 217, 160, 0.08);
+
+  color: #00d99a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.target-report-table-wrap {
+  width: 100%;
+
+  padding: 8px;
+
+  overflow-x: auto;
+}
+
+
+.target-report-table {
+  width: 100%;
+
+  min-width: 580px;
+
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+.target-report-table th {
+  padding: 11px 16px;
+
+  background:rgba(5,41,50,1) !important;
+
+
+  color: #ffffff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+
+.target-report-table th:first-child {
+  border-top-left-radius: 8px;
+}
+
+
+.target-report-table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+
+.target-report-table td {
+  padding: 12px 16px;
+
+  border-bottom:
+    1px solid
+    rgba(255,255,255,.055);
+
+  color: #c7d4d8;
+
+  background:
+    rgba(2, 14, 22, 0.16);
+
+  font-size: 12px;
+}
+
+
+.target-report-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+
+.target-report-table tbody tr:hover td {
+  background:
+    rgba(0, 217, 160, 0.035);
+}
+
+
+/* =====================================================
+   TABLE VALUES
+===================================================== */
+
+.target-report-name,
+.target-report-positive {
+  color: #00d99a !important;
+
+  font-weight: 700;
+}
+
+
+.target-report-percent {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 8px;
+
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.14);
+
+  border-radius: 5px;
+
+  background:
+    rgba(0, 217, 160, 0.075);
+
+  color: #00d99a;
+
+  font-weight: 700;
+}
+
+
+.target-report-empty {
+  padding: 35px 16px !important;
+
+  color: #71868f !important;
+
+  text-align: center;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.target-report-table-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+
+.target-report-table-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.target-report-table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background:
+    rgba(0, 190, 145, 0.26);
+}
+
+
+.target-report-table-wrap::-webkit-scrollbar-thumb:hover {
+  background:
+    rgba(0, 217, 160, 0.38);
+}
+
+
+/* =====================================================
+   DATE FIELD DARK MODE
+===================================================== */
+
+.target-report-filter input[type="date"] {
+  color-scheme: dark;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .target-report-page {
+    padding: 11px;
+  }
+
+
+  .target-report-toolbar {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .target-report-filters {
+    padding: 0 0 12px;
+  }
+
+
+  .target-report-filter {
+    flex: 1;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  .target-report-heading h2 {
+    font-size: 19px;
+  }
+
+
+  .target-report-preview {
+    display: none;
+  }
+
+
+  .target-report-filter {
+    flex-basis: 100%;
+  }
+
+
+  .target-report-panel-header {
+    padding: 14px;
+  }
+
+
+  .target-report-period-tabs,
+  .target-report-tabs {
+    overflow-x: auto;
+  }
+
+}

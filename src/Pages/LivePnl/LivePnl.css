@@ -1,0 +1,1292 @@
+/* =====================================================
+   PAGE
+===================================================== */
+
+.live-pnl-page {
+  min-height: calc(100vh - 68px);
+
+  padding: 24px 22px 36px;
+
+  color: #ffffff;
+
+  background: transparent;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.live-pnl-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-bottom: 8px;
+}
+
+
+.live-pnl-title {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.live-pnl-title-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid
+    rgba(0, 217, 160, 0.22);
+
+  border-radius: 10px;
+
+  background:
+    rgba(0, 217, 160, 0.07);
+
+  color: #00d9a0;
+
+  font-size: 17px;
+}
+
+
+.live-pnl-title h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+
+.live-pnl-title p {
+  margin: 4px 0 0;
+
+  color: #7d919b;
+
+  font-size: 10px;
+}
+
+
+/* =====================================================
+   TOP FILTERS
+===================================================== */
+
+.live-pnl-top-filters {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.live-pnl-top-select {
+  min-width: 175px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  padding-left: 11px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.18);
+
+  border-radius: 8px;
+
+  background:
+    rgba(2, 15, 23, 0.55);
+}
+
+
+.live-pnl-top-select span {
+  color: #71858f;
+
+  font-size: 8px;
+
+  white-space: nowrap;
+}
+
+
+.live-pnl-top-select select {
+  min-width: 0;
+  flex: 1;
+
+  height: 40px;
+
+  padding-right: 8px;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+
+.live-pnl-top-select select option {
+  background: #061923;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   SEGMENT TABS
+===================================================== */
+
+.live-pnl-segment-tabs {
+  display: flex;
+  align-items: center;
+
+  gap: 22px;
+
+  margin-top: 13px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.07);
+}
+
+
+.live-pnl-segment-tabs button {
+  position: relative;
+
+  height: 40px;
+
+  padding: 0 14px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #8b9ea6;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.live-pnl-segment-tabs button:hover {
+  color: #ffffff;
+}
+
+
+.live-pnl-segment-tabs button.active {
+  color: #00dda0;
+}
+
+
+.live-pnl-segment-tabs button.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -1px;
+
+  height: 2px;
+
+  border-radius: 3px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+}
+
+
+/* =====================================================
+   RANGE FILTERS
+===================================================== */
+
+.live-pnl-range-filters {
+  display: flex;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin:
+    11px
+    0
+    14px;
+}
+
+
+.live-pnl-range-filters button {
+  height: 32px;
+
+  padding: 0 13px;
+
+  border:
+    1px solid
+    rgba(135, 180, 185, 0.16);
+
+  border-radius: 7px;
+
+  background:
+    rgba(3, 17, 26, 0.45);
+
+  color: #91a4ac;
+
+  font-size: 8px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.live-pnl-range-filters button:hover {
+  border-color:
+    rgba(0, 217, 160, 0.25);
+
+  color: #ffffff;
+}
+
+
+.live-pnl-range-filters button.active {
+  border-color:
+    rgba(0, 217, 160, 0.3);
+
+  background:
+    linear-gradient(
+      90deg,
+      #00be67,
+      #01724c
+    );
+
+  color: #ffffff;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   TABLE CARD
+===================================================== */
+
+.live-pnl-card {
+  overflow: hidden;
+
+  border:
+    1px solid
+    rgba(140, 200, 200, 0.18);
+
+  border-radius: 12px;
+
+  background:
+    rgba(3, 18, 28, 0.15);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+}
+
+
+/* =====================================================
+   TABLE FILTER BAR
+===================================================== */
+
+.live-pnl-table-filter {
+  min-height: 62px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 11px 13px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.055);
+}
+
+
+.live-pnl-table-filter-left {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+/* SEARCH */
+
+.live-pnl-search,
+.live-pnl-stock-search {
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 0 11px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 7px;
+
+  background:
+    rgba(2, 15, 23, 0.54);
+}
+
+
+.live-pnl-search {
+  width: 310px;
+}
+
+
+.live-pnl-stock-search {
+  width: 220px;
+}
+
+
+.live-pnl-search i,
+.live-pnl-stock-search i {
+  color: #71858f;
+
+  font-size: 10px;
+}
+
+
+.live-pnl-search input,
+.live-pnl-stock-search input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 9px;
+}
+
+
+.live-pnl-search input::placeholder,
+.live-pnl-stock-search input::placeholder {
+  color: #617781;
+}
+
+
+/* DAYS */
+
+.live-pnl-days {
+  height: 39px;
+
+  min-width: 105px;
+
+  padding:
+    0
+    30px
+    0
+    11px;
+
+  border:
+    1px solid
+    rgba(135, 185, 190, 0.17);
+
+  border-radius: 7px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.54);
+
+  color: #c4d1d5;
+
+  font-size: 9px;
+}
+
+
+.live-pnl-days option {
+  background:
+    #061923;
+
+  color: #ffffff;
+}
+
+
+/* =====================================================
+   TABLE WRAP
+===================================================== */
+
+.live-pnl-table-wrap {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.live-pnl-table {
+  width: 100%;
+
+  min-width: 1100px;
+
+  border-collapse: collapse;
+}
+
+
+.live-pnl-table thead {
+   background:rgba(5,41,50,1) !important;
+
+}
+
+
+.live-pnl-table th {
+  height: 47px;
+
+  padding: 0 13px;
+
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 700;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+.live-pnl-table td {
+  height: 55px;
+
+  padding: 0 13px;
+
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.052);
+
+  color: #c7d4d8;
+
+  font-size: 9px;
+
+  white-space: nowrap;
+}
+
+
+.live-pnl-table tbody tr {
+  transition: 0.2s ease;
+}
+
+
+.live-pnl-table tbody tr:hover {
+  background:
+    rgba(0, 217, 160, 0.025);
+}
+
+
+/* =====================================================
+   SL NO
+===================================================== */
+
+.live-pnl-slno {
+  width: 25px;
+  height: 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background:
+    rgba(0, 217, 160, 0.1);
+
+  color: #00dda0;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   CLIENT
+===================================================== */
+
+.live-pnl-client-code {
+  color: #ffffff !important;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   STOCK
+===================================================== */
+
+.live-pnl-stock-name {
+  color: #d5e2e5 !important;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   LTP
+===================================================== */
+
+.live-pnl-ltp {
+  color: #7bd9d0 !important;
+
+  font-weight: 600;
+}
+
+
+/* =====================================================
+   WHAT IF
+===================================================== */
+
+.live-pnl-whatif {
+  width: 82px;
+  height: 32px;
+
+  padding: 0 8px;
+
+  border:
+    1px solid
+    rgba(135, 180, 185, 0.17);
+
+  border-radius: 6px;
+
+  outline: none;
+
+  background:
+    rgba(2, 15, 23, 0.55);
+
+  color: #ffffff;
+
+  font-size: 8px;
+}
+
+
+.live-pnl-whatif::placeholder {
+  color: #60757f;
+
+  font-size: 7px;
+}
+
+
+.live-pnl-whatif:focus {
+  border-color:
+    rgba(0, 217, 160, 0.4);
+}
+
+
+.live-pnl-whatif::-webkit-inner-spin-button,
+.live-pnl-whatif::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+
+  margin: 0;
+}
+
+
+/* =====================================================
+   PNL
+===================================================== */
+
+.live-pnl-value {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 6px;
+
+  font-weight: 700;
+}
+
+
+.live-pnl-value.profit {
+  color: #00e09a;
+}
+
+
+.live-pnl-value.loss {
+  color: #ff5965;
+}
+
+
+.live-pnl-value i {
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   ACTIONS
+===================================================== */
+
+.live-pnl-actions {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.live-pnl-actions button {
+  width: 27px;
+  height: 27px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+
+.live-pnl-chart-btn {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.25);
+
+  color: #00dda0;
+}
+
+
+.live-pnl-chart-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.08);
+}
+
+
+.live-pnl-delete-btn {
+  border:
+    1px solid
+    rgba(255, 80, 90, 0.25);
+
+  color: #ff5965;
+}
+
+
+.live-pnl-delete-btn:hover {
+  background:
+    rgba(255, 80, 90, 0.07);
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.live-pnl-empty {
+  height: 180px !important;
+
+  text-align: center;
+}
+
+
+.live-pnl-empty i {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #00d99a;
+
+  font-size: 24px;
+}
+
+
+.live-pnl-empty strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 12px;
+}
+
+
+.live-pnl-empty span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #71858f;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.live-pnl-footer {
+  min-height: 57px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 10px 14px;
+
+  color: #758a93;
+
+  font-size: 9px;
+}
+
+
+/* =====================================================
+   PAGINATION
+===================================================== */
+
+.live-pnl-pagination {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+}
+
+
+.live-pnl-pagination button {
+  min-width: 31px;
+  height: 31px;
+
+  padding: 0 8px;
+
+  border:
+    1px solid
+    rgba(135, 175, 185, 0.15);
+
+  border-radius: 7px;
+
+  background:
+    rgba(3, 18, 28, 0.48);
+
+  color: #81959e;
+
+  font-size: 9px;
+
+  cursor: pointer;
+}
+
+
+.live-pnl-pagination button.active {
+  min-width: 54px;
+
+  border-color:
+    rgba(0, 217, 160, 0.3);
+
+  background:
+    rgba(0, 217, 160, 0.075);
+
+  color: #00dca0;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+.live-pnl-table-wrap::-webkit-scrollbar {
+  height: 6px;
+}
+
+
+.live-pnl-table-wrap::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+.live-pnl-table-wrap::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background:
+    rgba(0, 190, 145, 0.26);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 991px) {
+
+  .live-pnl-header {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+
+  .live-pnl-top-filters {
+    width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+
+  .live-pnl-top-select {
+    flex: 1;
+
+    min-width: 210px;
+  }
+
+
+  .live-pnl-table-filter {
+    align-items: stretch;
+
+    flex-direction: column;
+  }
+
+
+  .live-pnl-table-filter-left {
+    flex-wrap: wrap;
+  }
+
+
+  .live-pnl-stock-search {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .live-pnl-page {
+    padding:
+      14px
+      12px
+      25px;
+  }
+
+
+  .live-pnl-title h2 {
+    font-size: 21px;
+  }
+
+
+  .live-pnl-title-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 14px;
+  }
+
+
+  .live-pnl-search {
+    width: 100%;
+  }
+
+
+  .live-pnl-days {
+    width: 100%;
+  }
+
+
+  .live-pnl-table-filter-left {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   VIEW ACTION
+===================================================== */
+
+.live-pnl-view-btn {
+  border:
+    1px solid
+    rgba(0, 217, 160, 0.25);
+
+  color: #00dda0;
+}
+
+
+.live-pnl-view-btn:hover {
+  background:
+    rgba(0, 217, 160, 0.08);
+}
+
+
+/* =====================================================
+   MODAL OVERLAY
+===================================================== */
+
+.live-pnl-modal-overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 5000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  background:
+    rgba(0, 7, 12, 0.76);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+
+/* =====================================================
+   VIEW MODAL
+===================================================== */
+
+.live-pnl-view-modal {
+  width: min(
+    430px,
+    94vw
+  );
+
+  padding: 26px;
+
+  border:
+    1px solid
+    rgba(
+      130,
+      195,
+      190,
+      0.22
+    );
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #071b24,
+      #03121a
+    );
+
+  box-shadow:
+    0
+    25px
+    70px
+    rgba(0, 0, 0, 0.5);
+}
+
+
+.live-pnl-view-modal h2 {
+  margin:
+    0
+    0
+    27px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+.live-pnl-view-details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.live-pnl-view-detail {
+  min-height: 50px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+.live-pnl-view-detail strong {
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+
+.live-pnl-view-detail span {
+  color: #a5b5bc;
+
+  font-size: 12px;
+}
+
+
+.live-pnl-view-detail span.positive {
+  color: #00e09d;
+
+  font-weight: 700;
+}
+
+
+.live-pnl-view-detail span.negative {
+  color: #ff5965;
+
+  font-weight: 700;
+}
+
+
+/* VIEW CLOSE */
+
+.live-pnl-view-close {
+  min-width: 66px;
+  height: 38px;
+
+  display: block;
+
+  margin:
+    22px
+    auto
+    0;
+
+  padding: 0 17px;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #7659e9,
+      #6450d7
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =====================================================
+   DELETE MODAL
+===================================================== */
+
+.live-pnl-delete-modal {
+  width: min(
+    390px,
+    94vw
+  );
+
+  padding:
+    25px
+    28px
+    28px;
+
+  text-align: center;
+
+  border:
+    1px solid
+    rgba(
+      130,
+      195,
+      190,
+      0.2
+    );
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #071b24,
+      #03121a
+    );
+
+  box-shadow:
+    0
+    25px
+    70px
+    rgba(0, 0, 0, 0.5);
+}
+
+
+/* WARNING ICON */
+
+.live-pnl-delete-warning {
+  width: 68px;
+  height: 68px;
+
+  margin:
+    0
+    auto
+    20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border:
+    3px solid
+    #ffab72;
+
+  border-radius: 50%;
+
+  color: #ffab72;
+
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+.live-pnl-delete-modal h2 {
+  margin:
+    0
+    0
+    12px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.live-pnl-delete-modal p {
+  margin: 0;
+
+  color: #8fa1aa;
+
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+.live-pnl-delete-modal p strong {
+  color: #dce5e8;
+
+  font-weight: 600;
+}
+
+
+/* DELETE ACTIONS */
+
+.live-pnl-delete-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  margin-top: 23px;
+}
+
+
+.live-pnl-delete-actions button {
+  min-width: 76px;
+  height: 38px;
+
+  padding: 0 15px;
+
+  border-radius: 6px;
+
+  font-size: 10px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* DELETE */
+
+.live-pnl-confirm-delete {
+  border: none;
+
+  background: #e6434e;
+
+  color: #ffffff;
+}
+
+
+.live-pnl-confirm-delete:hover {
+  background: #f04b56;
+}
+
+
+/* CANCEL */
+
+.live-pnl-cancel-delete {
+  border:
+    1px solid
+    rgba(
+      145,
+      175,
+      185,
+      0.18
+    );
+
+  background: #52636d;
+
+  color: #ffffff;
+}
+
+
+.live-pnl-cancel-delete:hover {
+  background: #60727d;
+}
